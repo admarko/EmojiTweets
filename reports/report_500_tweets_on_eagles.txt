@@ -1,0 +1,51 @@
+Final Report:
+
+500 Total tweets were looked at on search query: [eagles]
+19 of those tweets that contained emojis
+8 of Emoji Tweets had locations
+
+Country Map: {   '': '❗',
+    'Florida': '🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈',
+    'Indiana': '❤💙❤🦅❤💙👉',
+    'New York': '💌📷',
+    'New YorkNew York': '🦅',
+    'Pennsylvania': '😄🦅🦅💚☕👑🛍',
+    'Texas': '❤💙❤🦅❤💙👉'}
+
+ Emoji Map: {   '☕': 'Pennsylvania',
+    '❗': '',
+    '❤': 'Texas, Texas, Texas, Indiana, Indiana, Indiana',
+    '🏈': 'Florida, Florida, Florida, Florida, Florida, Florida, Florida, '
+         'Florida, Florida, Florida, Florida, Florida, Florida, Florida, '
+         'Florida, Florida',
+    '👉': 'Texas, Indiana',
+    '👑': 'Pennsylvania',
+    '💌': 'New York',
+    '💙': 'Texas, Texas, Indiana, Indiana',
+    '💚': 'Pennsylvania',
+    '📷': 'New York',
+    '😄': 'Pennsylvania',
+    '🛍': 'Pennsylvania',
+    '🦅': 'New YorkNew York, Texas, Pennsylvania, Pennsylvania, Indiana'}
+
+ Emoji Count Map: {   '‼': 1,
+    '☕': 1,
+    '❗': 1,
+    '❤': 9,
+    '⬆': 1,
+    '🏆': 1,
+    '🏈': 16,
+    '👀': 1,
+    '👉': 3,
+    '👑': 1,
+    '💌': 1,
+    '💙': 6,
+    '💚': 1,
+    '💣': 1,
+    '💯': 1,
+    '📰': 1,
+    '📷': 1,
+    '🔝': 1,
+    '😄': 1,
+    '🛍': 1,
+    '🦅': 7}

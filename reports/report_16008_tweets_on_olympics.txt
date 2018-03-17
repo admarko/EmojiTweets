@@ -1,0 +1,871 @@
+Final Report:
+
+16008 Total tweets were looked at
+2493 of those tweets that contained emojis
+1076 of Emoji Tweets had locations
+
+Country Map: {   '': '🌨⚽❄✌😀🍺🍺🍺',
+    'AL:Albania': '😭😭😭😭',
+    'AR:Argentina': '👀💕😭😍⚡🔥🔥🔥❤😁👍❤🔸😢😁😁😁💁⬇📹😍😍😍😍😍⚡',
+    'AT:Austria': '😭📺',
+    'AU:Australia': '💁💁💁😁👍🥇👀🌨⚽❄🏅😭🔥🔥↗💪🚨👀',
+    'BB:Barbados': '😭',
+    'BD:Bangladesh': '🌨⚽❄💕❤😍😭😭😭😁👍',
+    'BE:Belgium': '🌨⚽❄🌨⚽❄',
+    'BG:Bulgaria': '❄😂',
+    'BO:Bolivia': '❤❤❤❤❤❤❤',
+    'BR:Brazil': '💁♥♥♥💁💕💁🌨⚽❄😍🌨⚽❄❤🔥🔥😭🌨⚽❄📸😂🌨⚽❄🐰🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄👍❤💁🔗▶🌨⚽❄🍉🍍🍊🥝🍇🌨⚽❄👀',
+    'BW:Botswana': '🌨⚽❄💖💖💖💖💖',
+    'CA:Canada': '😎💁❤🥇🥈🥉🏒😢🌨⚽❄🌨⚽❄😁👍✌🙏🏼😎💁🌨⚽❄👀🔥🌎❤💪🏻🌨⚽❄🔥👀👀',
+    'CH:Switzerland': '🎿',
+    'CL:Chile': '🙆😂😂😂😂😂😂😂💁💁🕵‼‼📣📣‼💁😁👍😭😭💛💗👀👀💁',
+    'CN:China': '❤😍👏💁💕✨😭❗😫📺✨✨😭❣❣🙊🙊❄',
+    'CO:Colombia': '💁🎶🎶👑🌨⚽❄💁',
+    'CR:Costa Rica': '👀😻📺❤💁💁🗣🗣🗣🗣💁🔥😁👍🗣🗣🗣🗣😁👍💁💁❤😭💪🙂💁💁💁💛💖💖💖💖🙂🤧😭😭😭😭🔥💁🐻🐱😭📺😁💁😭💁',
+    'CZ:Czechia': '😭🌨⚽❄',
+    'DE:Germany': '🌨⚽❄🌨⚽❄🗳😁👍🤧🌨⚽❄🥇🥈🥉👀',
+    'DK:Denmark': '🌨⚽❄👀🌨⚽❄',
+    'DZ:Algeria': '💁❤💓😮❤❤❤❤❤❤❤❤🎤👍😁👍👀🌟🌟🚨',
+    'EC:Ecuador': '💁😻💁❤🎲🎲🙌💁',
+    'EG:Egypt': '💁🙂🌨⚽❄🌨⚽❄🌨⚽❄💁🙆',
+    'ES:Spain': '🌨⚽❄💕💖🗞🗞👉🙌💪🏻🔥❤🥇❤💙❤😍👏💛🖤💙🐱💙❄🗞🗞💁📷💁🌨⚽❄',
+    'FR:France': '🌷🌷🌨⚽❄💕🌨⚽❄📷⚡💕😂👀❤❤😍👏😮❤✨✨😭✨😭❗😫📺🙌🏾',
+    'GB:United Kingdom': '😂🙌🌨⚽❄😂😂❄❄❄❄❄❄😂🥇🤣🌨⚽❄🎿🌨⚽❄😂😂🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄😢➡👍👍🌨⚽❄🐿🥇🥈🥉✌🌨⚽❄💕🌨⚽❄😂🚨🚨🚫🚫↘⚠⚠😂😂🏂🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄😂❤💋😂❄😂😂🌎🌨⚽❄🌨⚽❄🌨⚽❄❄😂🌨😂🥇🥉🥉🥉🥉🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🎖⛸⛷⛸⛷😂😂😂👈🤛🖕🌨⚽❄🌨⚽❄🌨⚽❄😂😂😂❤🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄👀🌨⚽❄😍😍😍💙❤💚🖤😡😢🤦🏽♀⛷🍻🌨⚽❄🌨⚽❄⛷🙂❄😂😂😂🌨⚽❄😁😂🌨⚽❄',
+    'GH:Ghana': '🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄',
+    'GN:Guinea': '🌨⚽❄',
+    'GR:Greece': '💁👀',
+    'GT:Guatemala': '🤧',
+    'HK:Hong Kong': '👀😂😂😂😂😂',
+    'HN:Honduras': '😍😭😭😭',
+    'HR:Croatia': '😭😭▶',
+    'HU:Hungary': '💛🐻🌨⚽❄',
+    'ID:Indonesia': '❤🌨⚽❄❤🤣🤣🤣👀🌨⚽❄📺😍🌟🌟🚨📣🔗🍉🍍🍊🥝🍇🌨⚽❄‼📣📣‼❤🌨⚽❄🌨⚽❄💁🌨⚽❄📺😁👍🎤👍💪😍😮❤❤❤❤❤🌨⚽❄📺🙂🌨⚽❄🌨⚽❄🌨⚽❄📣🔗❤💪🌨⚽❄🌨⚽❄📺🌨⚽❄💁🗞🗞😁👍🌨⚽❄📺😭❤😁👍❤😁👍⚡💁👉❤🌨⚽❄👑💪💪💁💁🌨⚽❄😁👍😭😭😭😭❤❤❤❤💕💗💁📺😭⚡⚡🙆💛💪💛🐻😁👍😭❤😍❤',
+    'IE:Ireland': '🌨⚽❄😂😂😂😂😂😁😂😂😂😂😂',
+    'IL:Israel': '😂😂',
+    'IN:India': '🤣☀☀☀🎇💕🌨⚽❄📸👀❄😂🌨⚽❄🌨⚽❄🌨⚽❄👀🌨⚽❄',
+    'IQ:Iraq': '⚡😭😭😭😭🔥💁',
+    'IR:Iran': '❤😍👏❤👀😁👍🚨🚨🎉🎉👍👍▶😂🏅😍😍😍😍😍🌃🌟🎲🎲🙌💪🏻🏅🏅🏅🏅🏅🏅🚨🚨🔥😭',
+    'IS:Iceland': '😂😂😂',
+    'JM:Jamaica': '🌨⚽❄',
+    'JP:Japan': '💖💖💖💖💖📺😢➡👍👍💖💖💖💖💖🌨⚽❄😁👍📺🌨⚽❄🌨⚽❄🗼🔥🔥🗼💛🙏🙏',
+    'KE:Kenya': '🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄',
+    'KR:South Korea': '📣🔗▶📺😁👍💁☀☀☀😍🎤😍😍😍😍😍💁⚡💁😏👀❤❤🌟💙👍⤴🏅⚡👀💁😍❤👀😁👍👀😮❤❤👀💪😁👍💗📺💁❤❤❤❤❤❤😮👀💕👍👍🎇📣🔗🎶👀💕',
+    'KW:Kuwait': '😭👏😇😊😍👑',
+    'LT:Lithuania': '😁👍💛🙏🙏💁',
+    'MA:Morocco': '😂😂😂😭‼📣📣‼😭😭😁👍💁☺💁🚨💁👑👑👑👑👑',
+    'MM:Myanmar (Burma)': '🙆',
+    'MP:Northern Mariana Islands': '☺',
+    'MX:Mexico': '✌😁👍🎤👍❤❤📺😍👍👍👍🐻🌙👽❤❤❤😍💁💁😁👍💁❤🎲🎲🙌🌨⚽❄🌨⚽❄👀🌨⚽❄',
+    'MY:Malaysia': '🌨⚽❄🌨⚽❄☺👀🌨⚽❄🌨⚽❄🌨⚽❄👀😂🐻💎🌨⚽❄😁👍🌨⚽❄🌨⚽❄🌨⚽❄',
+    'NG:Nigeria': '🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄😏👀🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄',
+    'NL:Netherlands': '🤐💪🏻😍🎤',
+    'NO:Norway': '😂😭🌨⚽❄',
+    'NP:Nepal': '❤😍',
+    'PA:Panama': '😭😭👏👏👏👍👍',
+    'PE:Peru': '❤👏👏👍⤴🗞🗞❤😁😁😁❤😮❤❤❤❤❤❤😍👏❤💁💖👏💖💕♥♥♥👏👏👏💃😍😎👏👏👏👏👀🤣🔥🔥↗💪🚨🙂📺💕💕💁🤧👀❤📣🔗🍳',
+    'PH:Philippines': '👏🏼👏🏼👏🏼🌨⚽❄😭🎤👍❤❤👑❤👍❤😂😂😂❤😂😂😂❤😍😭👧🏻👀😁➡📺👍🏼👀💁📺💁😍👌👏😎👀🔥🔥↗💪🚨💁👀👀😎😁😍😂😂😂😂💁🌨⚽❄😁👍💁😎😎😎❤👑🌹🤗😁👍💪🏻💪🏻👀😂😂😂🔫🔫❤❤❤❤👀😁👍',
+    'PK:Pakistan': '🌨⚽❄👀✅✅❤😭🌨⚽❄😭🍳❤❤❤❤❤❤❤❤❤',
+    'PL:Poland': '🙂💪🏻',
+    'PR:Puerto Rico': '🗞🗞🌨⚽❄❤',
+    'PT:Portugal': '🌨⚽❄',
+    'PY:Paraguay': '🌨⚽❄',
+    'RO:Romania': '🗳✌',
+    'RU:Russia': '➡🌨⚽❄✨✨✨😭💕💝😭😭🥇👏🎉🔥💁🎉🔥👀',
+    'SA:Saudi Arabia': '🌨⚽❄🌨⚽❄🏒🔞🌨⚽❄🌨⚽❄❤❤❤🍃⚡👀🌨⚽❄♥',
+    'SG:Singapore': '🌨⚽❄🌨⚽❄',
+    'SI:Slovenia': '😢➡👍👍',
+    'SN:Senegal': '🌨⚽❄',
+    'SO:Somalia': '🌨⚽❄',
+    'SY:Syria': '🗣🗣🗣🗣',
+    'TH:Thailand': '😆😆👍☝😊😏😏👑👑❤🙆🏻💕😂🌨⚽❄😁👍🌨⚽❄🎉🎉✨😭📺😭😏👉🏻',
+    'TN:Tunisia': '🗳',
+    'TR:Turkey': '😭💖🙏✨✨✨🌨⚽❄💛🙏🙏💛🐻💛🐻😁👍👀📍📍😀😂🎇🎇',
+    'TT:Trinidad and Tobago': '👀',
+    'TW:Taiwan': '🐶♥💛🙏🙏',
+    'TZ:Tanzania': '🌨⚽❄',
+    'UA:Ukraine': '👀💁',
+    'UG:Uganda': '🌨⚽❄🌨⚽❄🌨⚽❄',
+    'US:United States': '🎇😱👏🌨⚽❄🐢‼🌨⚽❄📸🐶♥⛷🎿❤🗣🗣🗣🗣👉🙌⛈💁🤼♀🔗😭☺💋⚡❗🌨⚽❄🌏😎😎😎❤👑🌹🤗🥇🌨⚽❄❣🔥😁👍❤❤♥♥😘😘😘〰🤣💪🏾❤😩👌🌨⚽❄🌨⚽❄✌❤💋💁👇🏼👇🏼🤣💪🏾✌💕🐿🥇🥈🥉✌😁💪👀👍🏼😁🌨⚽❄😭💗🤗💁🌨⚽❄🐻🐱🚨🚨🎉🎉🌨⚽❄🌨⚽❄👏💬👍👍🏅❤😍👏🌨⚽❄🥇🥇🥇⬇😻🌨⚽❄💁👀🌨⚽❄😏🙂👀❤⬇💕❣‼📣📣‼❤⭐🏒😩❤🤘🏼😱😘😘⚓❤🏅❄✌😯❤🌨⚽❄👀😂😂👏🏼😭🥇🌨⚽❄😭😭😭💜📸🌨⚽❄😁👍👀📸🌨⚽❄👍🏻👍🏻👍🏻👍🏻👍🏻💕♥😢😢😢💕❤❤❤❤💁💕👀🔥👍👍👍🐻🌙👽❤❤❤🌨⚽❄😂🥇👀🙃❤💋💁💙💗👍🏽❤💋🎉🔥🙌🌨⚽❄❤❤🐻🐱💁👀💁😭😭💁🙅♀💁♀🤦♀😂©💕⬇➡🌨⚽❄🌨⚽❄👀👀🗣🗣🗣🗣🗣🗣🗣🗣😭😭😭😭‼😁😁😁👀👀🥇🏆🏅🌨⚽❄👀❤❤🌨⚽❄🌿🌿🌿🌿😳🌨⚽❄‼🌨⚽❄😭😭😭😭💕❤💁🎇💥👀🎇💕❤🌨⚽❄👀🌨⚽❄😂😂👀😁👍😁👍🔥🔥🔥🌨⚽❄🗼💁❤❤🥇💪🏽🌨⚽❄👀😏🤧💁😹👀👀❤❤❤❤❤❤😮🗳🌨⚽❄❤😁👍💁💛🐻📺🎉🔥⚽🌨⚽❄💛🐻🥇📖😂😂👀😢➡👍👍🌨⚽❄💁🌨⚽❄🌨⚽❄🌨⚽❄🌨⚽❄🥇🏆🗣📍📆🎟👍🏻🌨⚽❄📺💙💗🔥💦💦🔥❗❤✌💁💁💁🌨⚽❄🌨⚽❄🌨⚽❄💁💁👀👑😱👏🌨⚽❄🌨⚽❄🐰👀👍👏🏾🙋♀😂😂🏅💁❤💁🌿🌿🌿🌿🌨⚽❄❣💕👀®😁😏👀👀💪❤💙💁👀🌨⚽❄🌨⚽❄⛸🌨⚽❄🌨⚽❄👀🗣🗣🗣🗣',
+    'UY:Uruguay': '😁👍❤😭',
+    'ZA:South Africa': '🌨⚽❄👊👊🌨⚽❄🌨⚽❄🌨⚽❄💁🌨⚽❄'}
+
+ Emoji Map: {   '©': 'US:United States',
+    '®': 'US:United States',
+    '‼': 'US:United States, MA:Morocco, MA:Morocco, ID:Indonesia, '
+         'ID:Indonesia, US:United States, US:United States, CL:Chile, '
+         'CL:Chile, CL:Chile, US:United States, US:United States',
+    '↗': 'PH:Philippines, PE:Peru, AU:Australia',
+    '↘': 'GB:United Kingdom',
+    '▶': 'KR:South Korea, IR:Iran, HR:Croatia, BR:Brazil',
+    '☀': 'KR:South Korea, KR:South Korea, KR:South Korea, IN:India, IN:India, '
+         'IN:India',
+    '☝': 'TH:Thailand',
+    '☺': 'US:United States, MY:Malaysia, MP:Northern Mariana Islands, '
+         'MA:Morocco',
+    '♀': 'US:United States, US:United States, US:United States, US:United '
+         'States, US:United States, GB:United Kingdom',
+    '♥': 'US:United States, US:United States, US:United States, BR:Brazil, '
+         'BR:Brazil, BR:Brazil, TW:Taiwan, PE:Peru, PE:Peru, PE:Peru, '
+         'US:United States, SA:Saudi Arabia',
+    '⚓': 'US:United States',
+    '⚠': 'GB:United Kingdom, GB:United Kingdom',
+    '⚡': 'US:United States, AR:Argentina, IQ:Iraq, KR:South Korea, FR:France, '
+         'ID:Indonesia, KR:South Korea, ID:Indonesia, ID:Indonesia, SA:Saudi '
+         'Arabia, AR:Argentina',
+    '⚽': 'ID:Indonesia, GB:United Kingdom, MY:Malaysia, US:United States, '
+         'NG:Nigeria, US:United States, NG:Nigeria, PH:Philippines, '
+         'MY:Malaysia, NG:Nigeria, DE:Germany, GH:Ghana, NG:Nigeria, US:United '
+         'States, US:United States, ID:Indonesia, NG:Nigeria, ZA:South Africa, '
+         'NG:Nigeria, , TR:Turkey, GB:United Kingdom, US:United States, '
+         'US:United States, FR:France, DE:Germany, SN:Senegal, NG:Nigeria, '
+         'ES:Spain, MY:Malaysia, BD:Bangladesh, IE:Ireland, PK:Pakistan, '
+         'GB:United Kingdom, ID:Indonesia, NG:Nigeria, NG:Nigeria, '
+         'ID:Indonesia, US:United States, MY:Malaysia, ID:Indonesia, GB:United '
+         'Kingdom, SA:Saudi Arabia, ID:Indonesia, NG:Nigeria, SA:Saudi Arabia, '
+         'GB:United Kingdom, JP:Japan, GB:United Kingdom, GB:United Kingdom, '
+         'US:United States, ID:Indonesia, NG:Nigeria, NG:Nigeria, US:United '
+         'States, US:United States, ID:Indonesia, ID:Indonesia, ID:Indonesia, '
+         'GB:United Kingdom, ZA:South Africa, US:United States, US:United '
+         'States, US:United States, GB:United Kingdom, GB:United Kingdom, '
+         'NG:Nigeria, BR:Brazil, FR:France, ID:Indonesia, NG:Nigeria, '
+         'BR:Brazil, NG:Nigeria, SA:Saudi Arabia, ID:Indonesia, NG:Nigeria, '
+         'MY:Malaysia, US:United States, TH:Thailand, US:United States, '
+         'ID:Indonesia, US:United States, BR:Brazil, NG:Nigeria, NG:Nigeria, '
+         'US:United States, UG:Uganda, BW:Botswana, JP:Japan, SA:Saudi Arabia, '
+         'ID:Indonesia, US:United States, DK:Denmark, IN:India, NG:Nigeria, '
+         'GB:United Kingdom, EG:Egypt, GB:United Kingdom, GB:United Kingdom, '
+         'NG:Nigeria, NG:Nigeria, KE:Kenya, NG:Nigeria, GB:United Kingdom, '
+         'TH:Thailand, ID:Indonesia, NG:Nigeria, RU:Russia, PK:Pakistan, '
+         'US:United States, KE:Kenya, CA:Canada, BR:Brazil, GB:United Kingdom, '
+         'JP:Japan, CO:Colombia, NG:Nigeria, GB:United Kingdom, US:United '
+         'States, US:United States, BR:Brazil, GH:Ghana, NG:Nigeria, '
+         'UG:Uganda, NG:Nigeria, GB:United Kingdom, DE:Germany, GH:Ghana, '
+         'US:United States, NG:Nigeria, ID:Indonesia, US:United States, '
+         'CA:Canada, KE:Kenya, EG:Egypt, US:United States, US:United States, '
+         'MY:Malaysia, KE:Kenya, AU:Australia, GB:United Kingdom, GB:United '
+         'Kingdom, BR:Brazil, GB:United Kingdom, BR:Brazil, US:United States, '
+         'GB:United Kingdom, US:United States, KE:Kenya, GH:Ghana, '
+         'SG:Singapore, PH:Philippines, GB:United Kingdom, GB:United Kingdom, '
+         'US:United States, KE:Kenya, NO:Norway, NG:Nigeria, SG:Singapore, '
+         'US:United States, ZA:South Africa, NG:Nigeria, BR:Brazil, '
+         'DK:Denmark, MY:Malaysia, NG:Nigeria, PR:Puerto Rico, NG:Nigeria, '
+         'GH:Ghana, US:United States, IN:India, ZA:South Africa, GH:Ghana, '
+         'US:United States, US:United States, GB:United Kingdom, CZ:Czechia, '
+         'GB:United Kingdom, IN:India, GB:United Kingdom, US:United States, '
+         'US:United States, US:United States, TZ:Tanzania, US:United States, '
+         'US:United States, NG:Nigeria, MY:Malaysia, US:United States, '
+         'GB:United Kingdom, GB:United Kingdom, GB:United Kingdom, CA:Canada, '
+         'IN:India, BE:Belgium, GB:United Kingdom, GH:Ghana, US:United States, '
+         'US:United States, US:United States, PY:Paraguay, MX:Mexico, '
+         'NG:Nigeria, HU:Hungary, GB:United Kingdom, SA:Saudi Arabia, '
+         'US:United States, NG:Nigeria, US:United States, BR:Brazil, '
+         'MY:Malaysia, US:United States, EG:Egypt, NG:Nigeria, MX:Mexico, '
+         'GB:United Kingdom, NG:Nigeria, NG:Nigeria, MX:Mexico, UG:Uganda, '
+         'GB:United Kingdom, NG:Nigeria, GN:Guinea, NG:Nigeria, PT:Portugal, '
+         'BE:Belgium, KE:Kenya, GB:United Kingdom, US:United States, US:United '
+         'States, NG:Nigeria, IN:India, NG:Nigeria, CA:Canada, US:United '
+         'States, SO:Somalia, GB:United Kingdom, GH:Ghana, US:United States, '
+         'JM:Jamaica, ES:Spain, ZA:South Africa, NG:Nigeria, BR:Brazil',
+    '⛈': 'US:United States',
+    '⛷': 'US:United States, GB:United Kingdom, GB:United Kingdom, GB:United '
+         'Kingdom, GB:United Kingdom',
+    '⛸': 'GB:United Kingdom, GB:United Kingdom, US:United States',
+    '✅': 'PK:Pakistan, PK:Pakistan',
+    '✌': 'MX:Mexico, US:United States, US:United States, US:United States, '
+         'GB:United Kingdom, US:United States, CA:Canada, , RO:Romania, '
+         'US:United States',
+    '✨': 'TR:Turkey, TR:Turkey, TR:Turkey, RU:Russia, RU:Russia, RU:Russia, '
+         'FR:France, FR:France, FR:France, TH:Thailand, CN:China, CN:China, '
+         'CN:China',
+    '❄': 'ID:Indonesia, GB:United Kingdom, MY:Malaysia, US:United States, '
+         'NG:Nigeria, GB:United Kingdom, GB:United Kingdom, GB:United Kingdom, '
+         'GB:United Kingdom, GB:United Kingdom, GB:United Kingdom, US:United '
+         'States, NG:Nigeria, PH:Philippines, MY:Malaysia, NG:Nigeria, '
+         'DE:Germany, GH:Ghana, NG:Nigeria, US:United States, US:United '
+         'States, ID:Indonesia, NG:Nigeria, ZA:South Africa, NG:Nigeria, , '
+         'TR:Turkey, GB:United Kingdom, US:United States, US:United States, '
+         'FR:France, DE:Germany, SN:Senegal, NG:Nigeria, ES:Spain, '
+         'MY:Malaysia, BD:Bangladesh, IE:Ireland, PK:Pakistan, GB:United '
+         'Kingdom, ID:Indonesia, NG:Nigeria, NG:Nigeria, ID:Indonesia, '
+         'US:United States, MY:Malaysia, ID:Indonesia, GB:United Kingdom, '
+         'SA:Saudi Arabia, ID:Indonesia, NG:Nigeria, SA:Saudi Arabia, '
+         'GB:United Kingdom, JP:Japan, GB:United Kingdom, GB:United Kingdom, '
+         'US:United States, ID:Indonesia, NG:Nigeria, NG:Nigeria, US:United '
+         'States, US:United States, ID:Indonesia, ID:Indonesia, ID:Indonesia, '
+         'GB:United Kingdom, ZA:South Africa, US:United States, US:United '
+         'States, US:United States, GB:United Kingdom, GB:United Kingdom, '
+         'NG:Nigeria, BR:Brazil, FR:France, ID:Indonesia, NG:Nigeria, '
+         'BR:Brazil, NG:Nigeria, SA:Saudi Arabia, ID:Indonesia, NG:Nigeria, '
+         'US:United States, MY:Malaysia, US:United States, TH:Thailand, '
+         'US:United States, ID:Indonesia, US:United States, BR:Brazil, '
+         'NG:Nigeria, NG:Nigeria, US:United States, UG:Uganda, BW:Botswana, '
+         'JP:Japan, SA:Saudi Arabia, ID:Indonesia, US:United States, '
+         'DK:Denmark, IN:India, NG:Nigeria, GB:United Kingdom, EG:Egypt, '
+         'GB:United Kingdom, GB:United Kingdom, NG:Nigeria, NG:Nigeria, '
+         'KE:Kenya, NG:Nigeria, GB:United Kingdom, TH:Thailand, ID:Indonesia, '
+         'NG:Nigeria, RU:Russia, PK:Pakistan, US:United States, KE:Kenya, '
+         'GB:United Kingdom, CA:Canada, BR:Brazil, GB:United Kingdom, '
+         'JP:Japan, CO:Colombia, NG:Nigeria, GB:United Kingdom, US:United '
+         'States, US:United States, BR:Brazil, GH:Ghana, NG:Nigeria, '
+         'UG:Uganda, NG:Nigeria, GB:United Kingdom, DE:Germany, GB:United '
+         'Kingdom, GH:Ghana, US:United States, NG:Nigeria, ID:Indonesia, '
+         'US:United States, CA:Canada, KE:Kenya, EG:Egypt, US:United States, '
+         'US:United States, MY:Malaysia, KE:Kenya, AU:Australia, GB:United '
+         'Kingdom, GB:United Kingdom, BR:Brazil, GB:United Kingdom, BR:Brazil, '
+         'US:United States, GB:United Kingdom, US:United States, IN:India, '
+         'KE:Kenya, GH:Ghana, SG:Singapore, PH:Philippines, GB:United Kingdom, '
+         'GB:United Kingdom, US:United States, KE:Kenya, NO:Norway, '
+         'NG:Nigeria, SG:Singapore, US:United States, ZA:South Africa, '
+         'NG:Nigeria, BR:Brazil, DK:Denmark, MY:Malaysia, NG:Nigeria, '
+         'PR:Puerto Rico, NG:Nigeria, GH:Ghana, US:United States, IN:India, '
+         'ZA:South Africa, GH:Ghana, US:United States, GB:United Kingdom, '
+         'CZ:Czechia, GB:United Kingdom, IN:India, GB:United Kingdom, '
+         'US:United States, US:United States, US:United States, TZ:Tanzania, '
+         'US:United States, US:United States, NG:Nigeria, MY:Malaysia, '
+         'US:United States, GB:United Kingdom, GB:United Kingdom, GB:United '
+         'Kingdom, CA:Canada, IN:India, BE:Belgium, GB:United Kingdom, '
+         'GH:Ghana, ES:Spain, US:United States, US:United States, US:United '
+         'States, PY:Paraguay, MX:Mexico, NG:Nigeria, HU:Hungary, GB:United '
+         'Kingdom, SA:Saudi Arabia, US:United States, NG:Nigeria, US:United '
+         'States, BR:Brazil, MY:Malaysia, US:United States, EG:Egypt, '
+         'NG:Nigeria, MX:Mexico, CN:China, GB:United Kingdom, NG:Nigeria, '
+         'NG:Nigeria, BG:Bulgaria, MX:Mexico, UG:Uganda, GB:United Kingdom, '
+         'NG:Nigeria, GN:Guinea, GB:United Kingdom, NG:Nigeria, PT:Portugal, '
+         'BE:Belgium, KE:Kenya, GB:United Kingdom, US:United States, US:United '
+         'States, NG:Nigeria, IN:India, NG:Nigeria, CA:Canada, US:United '
+         'States, SO:Somalia, GB:United Kingdom, GH:Ghana, US:United States, '
+         'JM:Jamaica, ES:Spain, ZA:South Africa, NG:Nigeria, BR:Brazil',
+    '❗': 'US:United States, FR:France, CN:China, US:United States',
+    '❣': 'US:United States, US:United States, CN:China, CN:China, US:United '
+         'States',
+    '❤': 'PE:Peru, ID:Indonesia, ID:Indonesia, US:United States, IR:Iran, '
+         'MX:Mexico, MX:Mexico, US:United States, CN:China, US:United States, '
+         'US:United States, TH:Thailand, US:United States, PH:Philippines, '
+         'PH:Philippines, PH:Philippines, PH:Philippines, US:United States, '
+         'CR:Costa Rica, MX:Mexico, MX:Mexico, MX:Mexico, PH:Philippines, '
+         'PH:Philippines, IR:Iran, PE:Peru, ID:Indonesia, CA:Canada, PE:Peru, '
+         'PE:Peru, PE:Peru, PE:Peru, ID:Indonesia, PE:Peru, ID:Indonesia, '
+         'ID:Indonesia, PE:Peru, ID:Indonesia, ID:Indonesia, PE:Peru, '
+         'US:United States, CR:Costa Rica, PE:Peru, ID:Indonesia, US:United '
+         'States, US:United States, AR:Argentina, BR:Brazil, US:United States, '
+         'US:United States, US:United States, KR:South Korea, KR:South Korea, '
+         'US:United States, US:United States, US:United States, US:United '
+         'States, US:United States, US:United States, US:United States, '
+         'ID:Indonesia, ID:Indonesia, PK:Pakistan, EC:Ecuador, ID:Indonesia, '
+         'KR:South Korea, SA:Saudi Arabia, SA:Saudi Arabia, US:United States, '
+         'SA:Saudi Arabia, GB:United Kingdom, US:United States, US:United '
+         'States, US:United States, AR:Argentina, DZ:Algeria, US:United '
+         'States, US:United States, UY:Uruguay, KR:South Korea, KR:South '
+         'Korea, ID:Indonesia, US:United States, US:United States, '
+         'ID:Indonesia, ID:Indonesia, ID:Indonesia, NP:Nepal, US:United '
+         'States, US:United States, PH:Philippines, FR:France, US:United '
+         'States, BO:Bolivia, US:United States, US:United States, FR:France, '
+         'US:United States, US:United States, US:United States, FR:France, '
+         'US:United States, ES:Spain, BR:Brazil, DZ:Algeria, DZ:Algeria, '
+         'DZ:Algeria, DZ:Algeria, DZ:Algeria, DZ:Algeria, DZ:Algeria, '
+         'DZ:Algeria, PE:Peru, MX:Mexico, BD:Bangladesh, PR:Puerto Rico, '
+         'GB:United Kingdom, US:United States, KR:South Korea, ES:Spain, '
+         'KR:South Korea, ES:Spain, KR:South Korea, KR:South Korea, KR:South '
+         'Korea, KR:South Korea, GB:United Kingdom, US:United States, '
+         'ID:Indonesia, CA:Canada, PH:Philippines, PH:Philippines, '
+         'PH:Philippines, PH:Philippines, ID:Indonesia, PK:Pakistan, '
+         'PK:Pakistan, PK:Pakistan, PK:Pakistan, PK:Pakistan, PK:Pakistan, '
+         'PK:Pakistan, PK:Pakistan, PK:Pakistan, US:United States, BO:Bolivia, '
+         'BO:Bolivia, BO:Bolivia, BO:Bolivia, BO:Bolivia, BO:Bolivia',
+    '➡': 'JP:Japan, PH:Philippines, GB:United Kingdom, SI:Slovenia, RU:Russia, '
+         'US:United States, US:United States',
+    '⤴': 'PE:Peru, KR:South Korea',
+    '⬇': 'US:United States, US:United States, US:United States, AR:Argentina',
+    '⭐': 'US:United States',
+    '〰': 'US:United States',
+    '🌃': 'IR:Iran',
+    '🌎': 'GB:United Kingdom, CA:Canada',
+    '🌏': 'US:United States',
+    '🌙': 'MX:Mexico, US:United States',
+    '🌟': 'ID:Indonesia, ID:Indonesia, KR:South Korea, IR:Iran, DZ:Algeria, '
+         'DZ:Algeria',
+    '🌨': 'ID:Indonesia, GB:United Kingdom, MY:Malaysia, US:United States, '
+         'NG:Nigeria, US:United States, NG:Nigeria, PH:Philippines, '
+         'MY:Malaysia, NG:Nigeria, DE:Germany, GH:Ghana, NG:Nigeria, US:United '
+         'States, US:United States, ID:Indonesia, NG:Nigeria, ZA:South Africa, '
+         'NG:Nigeria, , TR:Turkey, GB:United Kingdom, US:United States, '
+         'US:United States, FR:France, DE:Germany, SN:Senegal, NG:Nigeria, '
+         'ES:Spain, MY:Malaysia, BD:Bangladesh, IE:Ireland, PK:Pakistan, '
+         'GB:United Kingdom, ID:Indonesia, NG:Nigeria, NG:Nigeria, '
+         'ID:Indonesia, US:United States, MY:Malaysia, ID:Indonesia, GB:United '
+         'Kingdom, SA:Saudi Arabia, ID:Indonesia, NG:Nigeria, SA:Saudi Arabia, '
+         'GB:United Kingdom, JP:Japan, GB:United Kingdom, GB:United Kingdom, '
+         'US:United States, ID:Indonesia, NG:Nigeria, NG:Nigeria, US:United '
+         'States, US:United States, ID:Indonesia, ID:Indonesia, ID:Indonesia, '
+         'GB:United Kingdom, ZA:South Africa, US:United States, US:United '
+         'States, US:United States, GB:United Kingdom, GB:United Kingdom, '
+         'NG:Nigeria, BR:Brazil, FR:France, ID:Indonesia, NG:Nigeria, '
+         'BR:Brazil, NG:Nigeria, SA:Saudi Arabia, ID:Indonesia, NG:Nigeria, '
+         'MY:Malaysia, US:United States, TH:Thailand, US:United States, '
+         'ID:Indonesia, US:United States, BR:Brazil, NG:Nigeria, NG:Nigeria, '
+         'US:United States, UG:Uganda, BW:Botswana, JP:Japan, SA:Saudi Arabia, '
+         'ID:Indonesia, US:United States, DK:Denmark, IN:India, NG:Nigeria, '
+         'GB:United Kingdom, EG:Egypt, GB:United Kingdom, GB:United Kingdom, '
+         'NG:Nigeria, NG:Nigeria, KE:Kenya, NG:Nigeria, GB:United Kingdom, '
+         'TH:Thailand, ID:Indonesia, NG:Nigeria, RU:Russia, PK:Pakistan, '
+         'US:United States, KE:Kenya, CA:Canada, BR:Brazil, GB:United Kingdom, '
+         'JP:Japan, CO:Colombia, NG:Nigeria, GB:United Kingdom, US:United '
+         'States, US:United States, BR:Brazil, GH:Ghana, NG:Nigeria, '
+         'UG:Uganda, NG:Nigeria, GB:United Kingdom, DE:Germany, GH:Ghana, '
+         'US:United States, NG:Nigeria, ID:Indonesia, US:United States, '
+         'CA:Canada, KE:Kenya, GB:United Kingdom, EG:Egypt, US:United States, '
+         'US:United States, MY:Malaysia, KE:Kenya, AU:Australia, GB:United '
+         'Kingdom, GB:United Kingdom, BR:Brazil, GB:United Kingdom, BR:Brazil, '
+         'US:United States, GB:United Kingdom, US:United States, KE:Kenya, '
+         'GH:Ghana, SG:Singapore, PH:Philippines, GB:United Kingdom, GB:United '
+         'Kingdom, US:United States, KE:Kenya, NO:Norway, NG:Nigeria, '
+         'SG:Singapore, US:United States, ZA:South Africa, NG:Nigeria, '
+         'BR:Brazil, DK:Denmark, MY:Malaysia, NG:Nigeria, PR:Puerto Rico, '
+         'NG:Nigeria, GH:Ghana, US:United States, IN:India, ZA:South Africa, '
+         'GH:Ghana, US:United States, GB:United Kingdom, CZ:Czechia, GB:United '
+         'Kingdom, IN:India, GB:United Kingdom, US:United States, US:United '
+         'States, US:United States, TZ:Tanzania, US:United States, US:United '
+         'States, NG:Nigeria, MY:Malaysia, US:United States, GB:United '
+         'Kingdom, GB:United Kingdom, GB:United Kingdom, CA:Canada, IN:India, '
+         'BE:Belgium, GB:United Kingdom, GH:Ghana, US:United States, US:United '
+         'States, US:United States, PY:Paraguay, MX:Mexico, NG:Nigeria, '
+         'HU:Hungary, GB:United Kingdom, SA:Saudi Arabia, US:United States, '
+         'NG:Nigeria, US:United States, BR:Brazil, MY:Malaysia, US:United '
+         'States, EG:Egypt, NG:Nigeria, MX:Mexico, GB:United Kingdom, '
+         'NG:Nigeria, NG:Nigeria, MX:Mexico, UG:Uganda, GB:United Kingdom, '
+         'NG:Nigeria, GN:Guinea, NG:Nigeria, PT:Portugal, BE:Belgium, '
+         'KE:Kenya, GB:United Kingdom, US:United States, US:United States, '
+         'NG:Nigeria, IN:India, NG:Nigeria, CA:Canada, US:United States, '
+         'SO:Somalia, GB:United Kingdom, GH:Ghana, US:United States, '
+         'JM:Jamaica, ES:Spain, ZA:South Africa, NG:Nigeria, BR:Brazil',
+    '🌷': 'FR:France, FR:France',
+    '🌹': 'US:United States, PH:Philippines',
+    '🌿': 'US:United States, US:United States, US:United States, US:United '
+         'States, US:United States, US:United States, US:United States, '
+         'US:United States',
+    '🍃': 'SA:Saudi Arabia',
+    '🍇': 'ID:Indonesia, BR:Brazil',
+    '🍉': 'ID:Indonesia, BR:Brazil',
+    '🍊': 'ID:Indonesia, BR:Brazil',
+    '🍍': 'ID:Indonesia, BR:Brazil',
+    '🍳': 'PK:Pakistan, PE:Peru',
+    '🍺': ', , ',
+    '🍻': 'GB:United Kingdom',
+    '🎇': 'US:United States, IN:India, US:United States, US:United States, '
+         'KR:South Korea, TR:Turkey, TR:Turkey',
+    '🎉': 'US:United States, US:United States, IR:Iran, IR:Iran, US:United '
+         'States, TH:Thailand, TH:Thailand, US:United States, RU:Russia, '
+         'RU:Russia',
+    '🎖': 'GB:United Kingdom',
+    '🎟': 'US:United States',
+    '🎤': 'MX:Mexico, PH:Philippines, KR:South Korea, ID:Indonesia, DZ:Algeria, '
+         'NL:Netherlands',
+    '🎲': 'IR:Iran, IR:Iran, EC:Ecuador, EC:Ecuador, MX:Mexico, MX:Mexico',
+    '🎶': 'CO:Colombia, CO:Colombia, KR:South Korea',
+    '🎿': 'US:United States, GB:United Kingdom, CH:Switzerland',
+    '🏂': 'GB:United Kingdom',
+    '🏅': 'US:United States, US:United States, KR:South Korea, US:United '
+         'States, IR:Iran, AU:Australia, IR:Iran, IR:Iran, IR:Iran, IR:Iran, '
+         'IR:Iran, IR:Iran, US:United States',
+    '🏆': 'US:United States, US:United States',
+    '🏒': 'CA:Canada, SA:Saudi Arabia, US:United States',
+    '🏻': 'TH:Thailand, PH:Philippines, US:United States, US:United States, '
+         'US:United States, US:United States, US:United States, ES:Spain, '
+         'NL:Netherlands, US:United States, IR:Iran, PL:Poland, '
+         'PH:Philippines, PH:Philippines, CA:Canada, TH:Thailand',
+    '🏼': 'PH:Philippines, PH:Philippines, PH:Philippines, US:United States, '
+         'US:United States, US:United States, PH:Philippines, US:United '
+         'States, US:United States, CA:Canada',
+    '🏽': 'US:United States, US:United States, GB:United Kingdom',
+    '🏾': 'US:United States, US:United States, US:United States, FR:France',
+    '🐢': 'US:United States',
+    '🐰': 'BR:Brazil, US:United States',
+    '🐱': 'US:United States, US:United States, CR:Costa Rica, ES:Spain',
+    '🐶': 'US:United States, TW:Taiwan',
+    '🐻': 'MX:Mexico, US:United States, US:United States, TR:Turkey, TR:Turkey, '
+         'US:United States, MY:Malaysia, HU:Hungary, US:United States, '
+         'US:United States, CR:Costa Rica, ID:Indonesia',
+    '🐿': 'US:United States, GB:United Kingdom',
+    '👀': 'HK:Hong Kong, CR:Costa Rica, AR:Argentina, ID:Indonesia, '
+         'MY:Malaysia, US:United States, PK:Pakistan, PH:Philippines, IR:Iran, '
+         'PH:Philippines, UA:Ukraine, US:United States, US:United States, '
+         'KR:South Korea, PH:Philippines, US:United States, PE:Peru, '
+         'MY:Malaysia, US:United States, US:United States, US:United States, '
+         'KR:South Korea, PH:Philippines, PH:Philippines, KR:South Korea, '
+         'US:United States, US:United States, US:United States, US:United '
+         'States, US:United States, US:United States, KR:South Korea, KR:South '
+         'Korea, AU:Australia, US:United States, IN:India, US:United States, '
+         'US:United States, TR:Turkey, DK:Denmark, FR:France, US:United '
+         'States, US:United States, US:United States, PE:Peru, TT:Trinidad and '
+         'Tobago, GR:Greece, US:United States, CA:Canada, DZ:Algeria, '
+         'GB:United Kingdom, IN:India, US:United States, SA:Saudi Arabia, '
+         'NG:Nigeria, KR:South Korea, US:United States, RU:Russia, '
+         'PH:Philippines, US:United States, MX:Mexico, US:United States, '
+         'DE:Germany, KR:South Korea, US:United States, PH:Philippines, '
+         'AU:Australia, US:United States, CL:Chile, CA:Canada, US:United '
+         'States, CA:Canada, CL:Chile, BR:Brazil',
+    '👇': 'US:United States, US:United States',
+    '👈': 'GB:United Kingdom',
+    '👉': 'US:United States, ID:Indonesia, ES:Spain, TH:Thailand',
+    '👊': 'ZA:South Africa, ZA:South Africa',
+    '👌': 'US:United States, PH:Philippines',
+    '👍': 'TH:Thailand, KR:South Korea, MX:Mexico, MX:Mexico, PE:Peru, '
+         'US:United States, PH:Philippines, JP:Japan, JP:Japan, '
+         'PH:Philippines, MX:Mexico, MX:Mexico, MX:Mexico, US:United States, '
+         'PH:Philippines, UY:Uruguay, CR:Costa Rica, ID:Indonesia, '
+         'ID:Indonesia, CR:Costa Rica, GB:United Kingdom, GB:United Kingdom, '
+         'SI:Slovenia, SI:Slovenia, US:United States, US:United States, '
+         'JP:Japan, US:United States, KR:South Korea, US:United States, '
+         'US:United States, US:United States, US:United States, US:United '
+         'States, MA:Morocco, ID:Indonesia, IR:Iran, US:United States, '
+         'US:United States, US:United States, DE:Germany, IR:Iran, IR:Iran, '
+         'TR:Turkey, ID:Indonesia, TH:Thailand, ID:Indonesia, AR:Argentina, '
+         'KR:South Korea, US:United States, AU:Australia, ID:Indonesia, '
+         'CA:Canada, KR:South Korea, US:United States, US:United States, '
+         'PH:Philippines, CL:Chile, MX:Mexico, MY:Malaysia, US:United States, '
+         'BR:Brazil, DZ:Algeria, US:United States, US:United States, US:United '
+         'States, PH:Philippines, DZ:Algeria, LT:Lithuania, ID:Indonesia, '
+         'PA:Panama, PA:Panama, US:United States, KR:South Korea, KR:South '
+         'Korea, BD:Bangladesh, PH:Philippines',
+    '👏': 'US:United States, PA:Panama, PA:Panama, PA:Panama, PH:Philippines, '
+         'PH:Philippines, PH:Philippines, IR:Iran, CN:China, PE:Peru, PE:Peru, '
+         'PE:Peru, US:United States, US:United States, PH:Philippines, '
+         'PE:Peru, PE:Peru, PE:Peru, PE:Peru, PE:Peru, PE:Peru, PE:Peru, '
+         'PE:Peru, US:United States, RU:Russia, FR:France, ES:Spain, US:United '
+         'States, US:United States, KW:Kuwait',
+    '👑': 'TH:Thailand, TH:Thailand, US:United States, PH:Philippines, '
+         'CO:Colombia, ID:Indonesia, MA:Morocco, MA:Morocco, MA:Morocco, '
+         'MA:Morocco, MA:Morocco, PH:Philippines, US:United States, KW:Kuwait',
+    '👧': 'PH:Philippines',
+    '👽': 'MX:Mexico, US:United States',
+    '💁': 'EC:Ecuador, US:United States, KR:South Korea, BR:Brazil, EC:Ecuador, '
+         'US:United States, CO:Colombia, EG:Egypt, BR:Brazil, CR:Costa Rica, '
+         'CA:Canada, CR:Costa Rica, KR:South Korea, ID:Indonesia, CR:Costa '
+         'Rica, US:United States, PH:Philippines, AU:Australia, BR:Brazil, '
+         'PH:Philippines, AU:Australia, MX:Mexico, CR:Costa Rica, US:United '
+         'States, CR:Costa Rica, KR:South Korea, PE:Peru, AU:Australia, '
+         'CL:Chile, CL:Chile, ID:Indonesia, US:United States, MA:Morocco, '
+         'CR:Costa Rica, PH:Philippines, ID:Indonesia, KR:South Korea, '
+         'CR:Costa Rica, CR:Costa Rica, US:United States, DZ:Algeria, '
+         'CL:Chile, MX:Mexico, US:United States, US:United States, US:United '
+         'States, US:United States, ID:Indonesia, ID:Indonesia, CN:China, '
+         'GR:Greece, MA:Morocco, MA:Morocco, US:United States, PH:Philippines, '
+         'PH:Philippines, US:United States, PE:Peru, AR:Argentina, US:United '
+         'States, MX:Mexico, CR:Costa Rica, CA:Canada, UA:Ukraine, US:United '
+         'States, ID:Indonesia, CO:Colombia, BR:Brazil, US:United States, '
+         'IQ:Iraq, KR:South Korea, US:United States, US:United States, '
+         'US:United States, US:United States, ES:Spain, US:United States, '
+         'LT:Lithuania, RU:Russia, ES:Spain, EC:Ecuador, US:United States, '
+         'US:United States, CR:Costa Rica, EG:Egypt, US:United States, '
+         'ZA:South Africa, CL:Chile, CR:Costa Rica',
+    '💃': 'PE:Peru',
+    '💋': 'US:United States, US:United States, US:United States, GB:United '
+         'Kingdom, US:United States',
+    '💎': 'MY:Malaysia',
+    '💓': 'DZ:Algeria',
+    '💕': 'TH:Thailand, BR:Brazil, US:United States, AR:Argentina, FR:France, '
+         'IN:India, GB:United Kingdom, ES:Spain, US:United States, PE:Peru, '
+         'US:United States, FR:France, BD:Bangladesh, US:United States, '
+         'US:United States, RU:Russia, US:United States, US:United States, '
+         'US:United States, PE:Peru, PE:Peru, ID:Indonesia, CN:China, KR:South '
+         'Korea, US:United States, KR:South Korea',
+    '💖': 'TR:Turkey, JP:Japan, JP:Japan, JP:Japan, JP:Japan, JP:Japan, '
+         'JP:Japan, JP:Japan, JP:Japan, JP:Japan, JP:Japan, PE:Peru, PE:Peru, '
+         'ES:Spain, CR:Costa Rica, CR:Costa Rica, CR:Costa Rica, CR:Costa '
+         'Rica, BW:Botswana, BW:Botswana, BW:Botswana, BW:Botswana, '
+         'BW:Botswana',
+    '💗': 'US:United States, US:United States, ID:Indonesia, KR:South Korea, '
+         'CL:Chile, US:United States',
+    '💙': 'KR:South Korea, US:United States, US:United States, ES:Spain, '
+         'ES:Spain, ES:Spain, GB:United Kingdom, US:United States',
+    '💚': 'GB:United Kingdom',
+    '💛': 'TR:Turkey, TR:Turkey, TR:Turkey, CR:Costa Rica, CL:Chile, '
+         'HU:Hungary, TW:Taiwan, US:United States, US:United States, '
+         'LT:Lithuania, ES:Spain, ID:Indonesia, ID:Indonesia, JP:Japan',
+    '💜': 'US:United States',
+    '💝': 'RU:Russia',
+    '💥': 'US:United States',
+    '💦': 'US:United States, US:United States',
+    '💪': 'US:United States, US:United States, US:United States, ID:Indonesia, '
+         'ID:Indonesia, CR:Costa Rica, PH:Philippines, PE:Peru, ID:Indonesia, '
+         'ID:Indonesia, ES:Spain, KR:South Korea, US:United States, '
+         'NL:Netherlands, IR:Iran, AU:Australia, ID:Indonesia, PL:Poland, '
+         'PH:Philippines, PH:Philippines, CA:Canada, US:United States',
+    '💬': 'US:United States',
+    '📆': 'US:United States',
+    '📍': 'US:United States, TR:Turkey, TR:Turkey',
+    '📖': 'US:United States',
+    '📣': 'KR:South Korea, MA:Morocco, MA:Morocco, ID:Indonesia, ID:Indonesia, '
+         'ID:Indonesia, ID:Indonesia, US:United States, US:United States, '
+         'CL:Chile, CL:Chile, PE:Peru, KR:South Korea',
+    '📷': 'FR:France, ES:Spain',
+    '📸': 'US:United States, US:United States, BR:Brazil, US:United States, '
+         'IN:India',
+    '📹': 'AR:Argentina',
+    '📺': 'KR:South Korea, MX:Mexico, ID:Indonesia, JP:Japan, CR:Costa Rica, '
+         'PH:Philippines, ID:Indonesia, PH:Philippines, ID:Indonesia, '
+         'JP:Japan, ID:Indonesia, ID:Indonesia, PE:Peru, KR:South Korea, '
+         'FR:France, US:United States, ID:Indonesia, US:United States, '
+         'CN:China, AT:Austria, TH:Thailand, CR:Costa Rica',
+    '🔗': 'KR:South Korea, US:United States, ID:Indonesia, ID:Indonesia, '
+         'BR:Brazil, PE:Peru, KR:South Korea',
+    '🔞': 'SA:Saudi Arabia',
+    '🔥': 'US:United States, AR:Argentina, AR:Argentina, AR:Argentina, CR:Costa '
+         'Rica, BR:Brazil, BR:Brazil, US:United States, PH:Philippines, '
+         'PH:Philippines, PE:Peru, PE:Peru, US:United States, JP:Japan, '
+         'JP:Japan, CR:Costa Rica, IQ:Iraq, ES:Spain, US:United States, '
+         'US:United States, US:United States, US:United States, US:United '
+         'States, US:United States, AU:Australia, AU:Australia, RU:Russia, '
+         'RU:Russia, CA:Canada, IR:Iran, CA:Canada',
+    '🔫': 'PH:Philippines, PH:Philippines',
+    '🔸': 'AR:Argentina',
+    '🕵': 'CL:Chile',
+    '🖕': 'GB:United Kingdom',
+    '🖤': 'ES:Spain, GB:United Kingdom',
+    '🗞': 'PE:Peru, PE:Peru, PR:Puerto Rico, PR:Puerto Rico, ID:Indonesia, '
+         'ID:Indonesia, ES:Spain, ES:Spain, ES:Spain, ES:Spain',
+    '🗣': 'US:United States, US:United States, US:United States, US:United '
+         'States, CR:Costa Rica, CR:Costa Rica, CR:Costa Rica, CR:Costa Rica, '
+         'CR:Costa Rica, CR:Costa Rica, CR:Costa Rica, CR:Costa Rica, '
+         'US:United States, US:United States, US:United States, US:United '
+         'States, US:United States, US:United States, US:United States, '
+         'US:United States, US:United States, SY:Syria, SY:Syria, SY:Syria, '
+         'SY:Syria, US:United States, US:United States, US:United States, '
+         'US:United States',
+    '🗳': 'RO:Romania, DE:Germany, TN:Tunisia, US:United States',
+    '🗼': 'JP:Japan, US:United States, JP:Japan',
+    '😀': ', TR:Turkey',
+    '😁': 'KR:South Korea, MX:Mexico, US:United States, US:United States, '
+         'US:United States, PH:Philippines, UY:Uruguay, PE:Peru, PE:Peru, '
+         'PE:Peru, CR:Costa Rica, ID:Indonesia, CR:Costa Rica, JP:Japan, '
+         'US:United States, MA:Morocco, ID:Indonesia, IR:Iran, DE:Germany, '
+         'TR:Turkey, ID:Indonesia, TH:Thailand, ID:Indonesia, AR:Argentina, '
+         'KR:South Korea, PH:Philippines, US:United States, US:United States, '
+         'US:United States, IE:Ireland, AU:Australia, ID:Indonesia, CA:Canada, '
+         'AR:Argentina, AR:Argentina, AR:Argentina, KR:South Korea, US:United '
+         'States, US:United States, PH:Philippines, CL:Chile, MX:Mexico, '
+         'MY:Malaysia, US:United States, PH:Philippines, DZ:Algeria, '
+         'LT:Lithuania, ID:Indonesia, CR:Costa Rica, US:United States, '
+         'GB:United Kingdom, BD:Bangladesh, PH:Philippines',
+    '😂': 'GB:United Kingdom, MA:Morocco, MA:Morocco, MA:Morocco, GB:United '
+         'Kingdom, GB:United Kingdom, HK:Hong Kong, HK:Hong Kong, HK:Hong '
+         'Kong, HK:Hong Kong, HK:Hong Kong, GB:United Kingdom, NO:Norway, '
+         'PH:Philippines, PH:Philippines, PH:Philippines, TH:Thailand, '
+         'PH:Philippines, PH:Philippines, PH:Philippines, GB:United Kingdom, '
+         'IE:Ireland, IE:Ireland, IE:Ireland, GB:United Kingdom, CL:Chile, '
+         'CL:Chile, CL:Chile, CL:Chile, CL:Chile, CL:Chile, CL:Chile, '
+         'GB:United Kingdom, GB:United Kingdom, GB:United Kingdom, US:United '
+         'States, US:United States, BR:Brazil, US:United States, FR:France, '
+         'MY:Malaysia, GB:United Kingdom, GB:United Kingdom, GB:United '
+         'Kingdom, GB:United Kingdom, US:United States, IE:Ireland, '
+         'IE:Ireland, GB:United Kingdom, IR:Iran, GB:United Kingdom, '
+         'IE:Ireland, PH:Philippines, PH:Philippines, PH:Philippines, '
+         'PH:Philippines, IE:Ireland, IS:Iceland, IS:Iceland, IS:Iceland, '
+         'US:United States, US:United States, IN:India, IL:Israel, IL:Israel, '
+         'GB:United Kingdom, GB:United Kingdom, GB:United Kingdom, US:United '
+         'States, US:United States, GB:United Kingdom, GB:United Kingdom, '
+         'GB:United Kingdom, TR:Turkey, IE:Ireland, IE:Ireland, IE:Ireland, '
+         'US:United States, US:United States, PH:Philippines, PH:Philippines, '
+         'PH:Philippines, BG:Bulgaria, GB:United Kingdom, GB:United Kingdom, '
+         'GB:United Kingdom, GB:United Kingdom',
+    '😆': 'TH:Thailand, TH:Thailand',
+    '😇': 'KW:Kuwait',
+    '😊': 'TH:Thailand, KW:Kuwait',
+    '😍': 'IR:Iran, CN:China, KR:South Korea, ID:Indonesia, MX:Mexico, KR:South '
+         'Korea, KR:South Korea, KR:South Korea, KR:South Korea, KR:South '
+         'Korea, PH:Philippines, MX:Mexico, AR:Argentina, ID:Indonesia, '
+         'PE:Peru, US:United States, PH:Philippines, BR:Brazil, PE:Peru, '
+         'KR:South Korea, IR:Iran, PH:Philippines, IR:Iran, IR:Iran, IR:Iran, '
+         'IR:Iran, HN:Honduras, NP:Nepal, FR:France, NL:Netherlands, ES:Spain, '
+         'AR:Argentina, AR:Argentina, AR:Argentina, AR:Argentina, '
+         'AR:Argentina, GB:United Kingdom, GB:United Kingdom, GB:United '
+         'Kingdom, KW:Kuwait, ID:Indonesia, BD:Bangladesh',
+    '😎': 'CA:Canada, US:United States, US:United States, US:United States, '
+         'PH:Philippines, PE:Peru, PH:Philippines, PH:Philippines, '
+         'PH:Philippines, PH:Philippines, CA:Canada',
+    '😏': 'TH:Thailand, TH:Thailand, US:United States, KR:South Korea, '
+         'US:United States, NG:Nigeria, US:United States, TH:Thailand',
+    '😘': 'US:United States, US:United States, US:United States, US:United '
+         'States, US:United States',
+    '😡': 'GB:United Kingdom',
+    '😢': 'JP:Japan, CA:Canada, GB:United Kingdom, SI:Slovenia, US:United '
+         'States, US:United States, US:United States, AR:Argentina, US:United '
+         'States, GB:United Kingdom',
+    '😩': 'US:United States, US:United States',
+    '😫': 'FR:France, CN:China',
+    '😭': 'TR:Turkey, MA:Morocco, PA:Panama, PA:Panama, PH:Philippines, '
+         'US:United States, HR:Croatia, HR:Croatia, PH:Philippines, '
+         'AR:Argentina, US:United States, MA:Morocco, MA:Morocco, CR:Costa '
+         'Rica, NO:Norway, US:United States, US:United States, US:United '
+         'States, US:United States, BR:Brazil, ID:Indonesia, IQ:Iraq, IQ:Iraq, '
+         'IQ:Iraq, IQ:Iraq, PK:Pakistan, CZ:Czechia, RU:Russia, US:United '
+         'States, US:United States, AL:Albania, AL:Albania, AL:Albania, '
+         'AL:Albania, CR:Costa Rica, CR:Costa Rica, CR:Costa Rica, CR:Costa '
+         'Rica, PK:Pakistan, US:United States, US:United States, US:United '
+         'States, US:United States, ID:Indonesia, ID:Indonesia, ID:Indonesia, '
+         'ID:Indonesia, RU:Russia, US:United States, US:United States, '
+         'US:United States, US:United States, RU:Russia, HN:Honduras, '
+         'HN:Honduras, HN:Honduras, AT:Austria, CL:Chile, CL:Chile, '
+         'AU:Australia, FR:France, FR:France, ID:Indonesia, CN:China, '
+         'CN:China, BB:Barbados, TH:Thailand, CR:Costa Rica, ID:Indonesia, '
+         'UY:Uruguay, TH:Thailand, KW:Kuwait, IR:Iran, BD:Bangladesh, '
+         'BD:Bangladesh, BD:Bangladesh, CR:Costa Rica',
+    '😮': 'PE:Peru, ID:Indonesia, KR:South Korea, US:United States, FR:France, '
+         'DZ:Algeria, KR:South Korea',
+    '😯': 'US:United States',
+    '😱': 'US:United States, US:United States, US:United States',
+    '😳': 'US:United States',
+    '😹': 'US:United States',
+    '😻': 'EC:Ecuador, CR:Costa Rica, US:United States',
+    '🙂': 'PL:Poland, ID:Indonesia, US:United States, EG:Egypt, CR:Costa Rica, '
+         'CR:Costa Rica, PE:Peru, GB:United Kingdom',
+    '🙃': 'US:United States',
+    '🙅': 'US:United States',
+    '🙆': 'TH:Thailand, MM:Myanmar (Burma), CL:Chile, ID:Indonesia, EG:Egypt',
+    '🙊': 'CN:China, CN:China',
+    '🙋': 'US:United States',
+    '🙌': 'GB:United Kingdom, US:United States, US:United States, ES:Spain, '
+         'IR:Iran, EC:Ecuador, MX:Mexico, FR:France',
+    '🙏': 'TR:Turkey, TR:Turkey, TR:Turkey, CA:Canada, TW:Taiwan, TW:Taiwan, '
+         'LT:Lithuania, LT:Lithuania, JP:Japan, JP:Japan',
+    '🚨': 'ID:Indonesia, US:United States, US:United States, GB:United Kingdom, '
+         'GB:United Kingdom, IR:Iran, IR:Iran, PH:Philippines, PE:Peru, '
+         'MA:Morocco, AU:Australia, IR:Iran, IR:Iran, DZ:Algeria',
+    '🚫': 'GB:United Kingdom, GB:United Kingdom',
+    '🤐': 'NL:Netherlands',
+    '🤗': 'US:United States, US:United States, PH:Philippines',
+    '🤘': 'US:United States',
+    '🤛': 'GB:United Kingdom',
+    '🤣': 'ID:Indonesia, ID:Indonesia, ID:Indonesia, IN:India, GB:United '
+         'Kingdom, US:United States, US:United States, PE:Peru',
+    '🤦': 'US:United States, GB:United Kingdom',
+    '🤧': 'CR:Costa Rica, DE:Germany, PE:Peru, GT:Guatemala, US:United States',
+    '🤼': 'US:United States',
+    '🥇': 'US:United States, GB:United Kingdom, US:United States, CA:Canada, '
+         'US:United States, US:United States, US:United States, GB:United '
+         'Kingdom, US:United States, US:United States, US:United States, '
+         'AU:Australia, GB:United Kingdom, US:United States, RU:Russia, '
+         'US:United States, DE:Germany, US:United States, ES:Spain',
+    '🥈': 'US:United States, CA:Canada, GB:United Kingdom, DE:Germany',
+    '🥉': 'US:United States, CA:Canada, GB:United Kingdom, GB:United Kingdom, '
+         'GB:United Kingdom, GB:United Kingdom, GB:United Kingdom, DE:Germany',
+    '🥝': 'ID:Indonesia, BR:Brazil'}
+
+ Emoji Count Map: {   '©': 2,
+    '®': 3,
+    '‼': 23,
+    '™': 1,
+    '↗': 7,
+    '↘': 2,
+    '⏳': 1,
+    '▶': 10,
+    '☀': 6,
+    '☄': 1,
+    '☕': 1,
+    '☝': 1,
+    '☺': 15,
+    '♀': 14,
+    '♂': 1,
+    '♥': 25,
+    '⚓': 1,
+    '⚠': 6,
+    '⚡': 24,
+    '⚽': 364,
+    '⛈': 1,
+    '⛷': 8,
+    '⛸': 5,
+    '✅': 2,
+    '✈': 1,
+    '✌': 32,
+    '✔': 1,
+    '✨': 50,
+    '❄': 386,
+    '❌': 1,
+    '❗': 13,
+    '❣': 5,
+    '❤': 403,
+    '➡': 16,
+    '⤴': 4,
+    '⬇': 4,
+    '⭐': 4,
+    '〰': 1,
+    '🌃': 1,
+    '🌊': 1,
+    '🌎': 2,
+    '🌏': 2,
+    '🌐': 1,
+    '🌙': 3,
+    '🌞': 1,
+    '🌟': 15,
+    '🌨': 364,
+    '🌷': 8,
+    '🌸': 1,
+    '🌹': 8,
+    '🌿': 8,
+    '🍃': 4,
+    '🍇': 2,
+    '🍉': 2,
+    '🍊': 2,
+    '🍍': 2,
+    '🍑': 1,
+    '🍓': 1,
+    '🍕': 1,
+    '🍗': 1,
+    '🍳': 3,
+    '🍺': 3,
+    '🍻': 1,
+    '🎁': 1,
+    '🎂': 1,
+    '🎇': 16,
+    '🎈': 1,
+    '🎉': 34,
+    '🎖': 1,
+    '🎙': 1,
+    '🎟': 1,
+    '🎤': 16,
+    '🎥': 1,
+    '🎲': 8,
+    '🎵': 1,
+    '🎶': 7,
+    '🎿': 3,
+    '🏂': 5,
+    '🏃': 1,
+    '🏄': 1,
+    '🏅': 29,
+    '🏆': 2,
+    '🏒': 6,
+    '🏝': 1,
+    '🏴': 1,
+    '🏻': 45,
+    '🏼': 20,
+    '🏽': 6,
+    '🏾': 10,
+    '🐕': 1,
+    '🐢': 1,
+    '🐧': 1,
+    '🐯': 1,
+    '🐰': 7,
+    '🐱': 7,
+    '🐶': 6,
+    '🐻': 24,
+    '🐼': 1,
+    '🐿': 4,
+    '👀': 187,
+    '👇': 13,
+    '👈': 1,
+    '👉': 13,
+    '👊': 4,
+    '👋': 1,
+    '👌': 6,
+    '👍': 226,
+    '👏': 85,
+    '👑': 36,
+    '👧': 2,
+    '👨': 1,
+    '👮': 1,
+    '👽': 3,
+    '💀': 1,
+    '💁': 226,
+    '💃': 3,
+    '💋': 7,
+    '💎': 1,
+    '💓': 1,
+    '💕': 65,
+    '💖': 68,
+    '💗': 9,
+    '💘': 1,
+    '💙': 14,
+    '💚': 1,
+    '💛': 26,
+    '💜': 3,
+    '💝': 2,
+    '💞': 1,
+    '💤': 1,
+    '💥': 3,
+    '💦': 2,
+    '💨': 1,
+    '💪': 60,
+    '💬': 1,
+    '💼': 1,
+    '📆': 1,
+    '📍': 5,
+    '📎': 1,
+    '📖': 1,
+    '📚': 1,
+    '📝': 1,
+    '📢': 1,
+    '📣': 41,
+    '📷': 4,
+    '📸': 6,
+    '📹': 1,
+    '📺': 56,
+    '🔋': 1,
+    '🔗': 29,
+    '🔞': 2,
+    '🔥': 69,
+    '🔫': 2,
+    '🔵': 1,
+    '🔷': 1,
+    '🔸': 1,
+    '🕵': 1,
+    '🖕': 1,
+    '🖤': 3,
+    '🗞': 36,
+    '🗣': 62,
+    '🗳': 10,
+    '🗼': 4,
+    '😀': 2,
+    '😁': 119,
+    '😂': 149,
+    '😆': 11,
+    '😇': 1,
+    '😊': 8,
+    '😋': 1,
+    '😌': 1,
+    '😍': 122,
+    '😎': 37,
+    '😏': 24,
+    '😘': 10,
+    '😛': 1,
+    '😡': 1,
+    '😢': 20,
+    '😩': 3,
+    '😫': 3,
+    '😬': 1,
+    '😭': 180,
+    '😮': 15,
+    '😯': 1,
+    '😱': 4,
+    '😲': 1,
+    '😳': 1,
+    '😶': 1,
+    '😹': 1,
+    '😻': 6,
+    '🙂': 15,
+    '🙃': 1,
+    '🙄': 1,
+    '🙅': 1,
+    '🙆': 5,
+    '🙇': 1,
+    '🙈': 1,
+    '🙊': 2,
+    '🙋': 1,
+    '🙌': 28,
+    '🙏': 23,
+    '🚨': 35,
+    '🚫': 4,
+    '🛫': 1,
+    '🤐': 1,
+    '🤔': 1,
+    '🤗': 14,
+    '🤘': 1,
+    '🤛': 1,
+    '🤠': 1,
+    '🤣': 16,
+    '🤦': 2,
+    '🤧': 13,
+    '🤼': 1,
+    '🥇': 30,
+    '🥈': 7,
+    '🥉': 11,
+    '🥝': 2}

@@ -1,0 +1,476 @@
+Final Report:
+
+20000 Total tweets were looked at on search query: "trump"
+801 of those tweets contained emojis
+510 of Emoji Tweets had locations
+
+Country Map: {   '': '💥💥💥💥💥💥💥💥💥💥‼🙄🙄🙄🙄😬😬😳😳😳😳',
+    'Australia': '🔥🔥🏆🏆🏆😊🤔💖',
+    'Belgium': '⭐⭐▶',
+    'Canada': '👍👍👍👍👍🤣🤣🤣🤣🤣⚽✔‼💰😄👇🏼👇🏼❓😄😂😂😂📺😎‼✔👍😀',
+    'Colombia': '😝',
+    'Costa Rica': '☺',
+    'Denmark': '🙌🏽',
+    'France': '⭐💯👇👇👇🌍🌍',
+    'Georgia': '🤣',
+    'Germany': '😂‼',
+    'Ghana': '😂😂😂😂😂',
+    'Ireland': '🙈',
+    'Italy': '🙏',
+    'Jamaica': '🏆🏆🏆',
+    'Jersey': '🛑🛑',
+    'Mexico': '⬇🔻⬇⬇⬇➡👇🏼',
+    'Netherlands': '👇🏻',
+    'South Africa': '❓',
+    'Spain': '🔊🐻⬇⬆🐂',
+    'Switzerland': '😁😁😁',
+    'Turkey': '😎😎😎',
+    'United Kingdom': '⚡⚡✅✅✅✅❗✅✅✅✅😂😂😂😂😂😂😂😂😂😂😂😁👇👇👇💥✅✅✅✅😄😣😣😣😣😣😣‼😎',
+    'United States': '😺😺😺🌊🌊‼😂😂😂😲😲✔🙋🏻♀💥💥✔🤔👍🏻😎💥‼‼‼💥💥💥💥💥💥💥💥💥💥‼🤔😂🌊🙄🙂‼‼‼🍌😀👏👏✔🎯🍿👏🏼🍿👏🏼🍿⚡🔥🔥😄💯🙏😄🤔✨✨🔥‼😁😎💥💥💥💥💥💥💥💥💥💥‼👍😠🤔😎🙄😡➖➖➖✔😂🤔🤔🤔😄❓💥💥💥💥💥💥💥💥💥💥‼🖕😠🖕🤷🏽♀😡😡😡🛑👇⁉🤔🙄🙂👇👇👇😄✔✔💥💥💥💥💥💥💥💥💥💥‼🍿👏🏼🍿👏🏼🍿⚡💩😂😂😂😂😂😂😂😂🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣✔😂😂👊👇❗❗👇👇👇🤔💥💥💥💥💥💥💥💥💥💥‼👍🏻😎🙋🙆💪👏🔥❗😩🚨‼❓🙄😡➖➖➖✔✔❓✔✔👉⚠🚫⚠😄🤣🤣🙏💩👏🐊🐍💀🙀👎🏼👺🎯✔✔⚡❗💥🔼🔽👉🏼🎤⁉👍🏻😎🤔✔😊🤔🤔❗🙄🙄📍✔🤔🤔🤔🤔🤡❓👇🏼👇👇👇🤔🤷♀😋🔥🔥💥💥💥💥💥💥💥💥💥💥‼🤔✔⚡🤔🤔🤔😠😡😡😡🛑😄🍊🤡❓😎‼‼🔥🤔🤔🤔😡😡😡🛑🍿👏🏼🍿👏🏼🍿⚡✔❓👇🏼👇🏼✔🤔🤔🤔⚡😂😂😂✔👍⚡😄✔➡🍿👏🏼🍿👏🏼🍿⚡✔✔🤣😂😂✔🤷♀😋‼➡😄💥💥💥💥💥💥💥💥💥💥‼😊😂💣❓✔😄✔💥🔥🔥💥👇👇👇‼🚂❗😄❓🚨🚨😠🙄🙂🔥🔥✊🏽✊🏽🙏🏽✔👉🛑🛑✔😂😁✔✔😄😊😠😄💯‼😎🎯🙄😄🤔😎‼😄✔😄👇👇👇🤔🤔🤔✔🔥🔥😉😢😥😂🤣😅‼✔🙏🏽🙏🏽🔥🔥‼😎👉❗👇👇👇✔🙏🙏😎‼‼🚨🔥🚨🔥🚨🔥🚨🔥🚨🔥🚨🔥🚨‼😎🤣🤣✔😠👉🏻💁🏼🤣😂🤣😂✔😎‼➡✔👇👇👇‼🔥🔥😄✔😄✔✔💥💥💥💥💥💥💥💥💥💥‼🤔🤔🤔✔👇👇👇‼👇🏼👇🏼‼💣🔥🍷🍿🤔🤔🤔🤔🤔🤔🤗😳🔥🔥👉➡😂🌊🚨🔥🙄🍒🙄🙂❓❓🙄✔💩❤💥‼‼‼‼🤔🤔🤔🙄🙂😂🌊😄🍿👏🏼🍿👏🏼🍿⚡🔥🔥👇👇👇🖕🏻🐍❤❤💥💥💥💥💥💥💥💥💥💥‼💣🙄🙂👇👇👇👋👋👋😄😊👇🤔🤔🤔⚡🤔🤔🤔⭐⭐➡⬅😊❗😂🌊😄👇👇👇🚨‼😄💥‼😎💥💥💥💥💥💥💥💥💥💥‼😡👉👉👉😊👍😎‼✔❓😄💥😈🤡🤡🤡🤡🤡😈😂🌊😎‼🍿👏🏼🍿👏🏼🍿⚡🔥🔥💸➡🔁🔥🔥🤔🤔🤔✔😡🤔🤔🤔🔥😄⏰♦✔⁉💣👀🚨🛑🛑😄🙄🙂✔😄🚨😤🔥🔥🙋🏻♀👉😂😂😂😂😂😂😂😂😂😂😂😂😎‼🤔🤔🤔🤔🤔🤔🙄🤥🤣✔😂🌊💥💥🤔🤔🤔💩👏🐊🐍💀🙀👎🏼👺😄✔💛⁉🚨😤😄🙄➖😂🌊✔✔👇👇👇👇👇👇👇👇👇👇👇👇✔😡😄💥💥💥💥💥💥💥💥💥💥‼👉👇👇👇✔💖♦🤔🤔🤔🤷♀😋⁉‼❓🙄👋🏽🍿👀🍿👀🎯😄🤔😄🤔🤔🤔🤔🔥🔥✔‼😂🌊✔‼😄🎯😂😂😂🤣🤣🤣😎‼‼😎🙄🙂🎯🙂💥‼‼‼😎‼❓⁉🚢✔👉👇👇👇🎂✔😐🚨🚨❓✔🍿👏🏼🍿👏🏼🍿⚡😄😊😄😂🌊😡😡😡🛑🤣❗❗🔥❗❌❌❌😂✔🔥🔥😡😡😡🛑‼✔🔥🔥👉👇👇👇😄✔✔🤣🙄🙂🎯⁉⚡🙄🙂✔😄🍿👏🏼🍿👏🏼🍿⚡✔🔥🔥😄🎯😄✔❓‼🤔👉👉🚨🚨🚨🙂😏',
+    'Venezuela': '😘😙😚🎥'}
+
+ Emoji Map: {   '‼': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, , Germany, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, Canada, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, Canada, '
+         'United States, United States, United States, United States, United '
+         'Kingdom, United States, United States, United States, United States, '
+         'United States, United States, United States, United States',
+    '⁉': 'United States, United States, United States, United States, United '
+         'States, United States, United States',
+    '⏰': 'United States',
+    '▶': 'Belgium',
+    '☺': 'Costa Rica',
+    '♀': 'United States, United States, United States, United States, United '
+         'States, United States',
+    '♦': 'United States, United States',
+    '⚠': 'United States, United States',
+    '⚡': 'United Kingdom, United States, United Kingdom, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States',
+    '⚽': 'Canada',
+    '✅': 'United Kingdom, United Kingdom, United Kingdom, United Kingdom, '
+         'United Kingdom, United Kingdom, United Kingdom, United Kingdom, '
+         'United Kingdom, United Kingdom, United Kingdom, United Kingdom',
+    '✊': 'United States, United States',
+    '✔': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'Canada, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, Canada, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States',
+    '✨': 'United States, United States',
+    '❌': 'United States, United States, United States',
+    '❓': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, South Africa, '
+         'United States, United States, Canada, United States, United States, '
+         'United States, United States, United States',
+    '❗': 'United States, United States, United States, United States, United '
+         'States, United Kingdom, United States, United States, United States, '
+         'United States, United States, United States',
+    '❤': 'United States, United States, United States',
+    '➖': 'United States, United States, United States, United States, United '
+         'States, United States, United States',
+    '➡': 'United States, United States, United States, Mexico, United States, '
+         'United States, United States',
+    '⬅': 'United States',
+    '⬆': 'Spain',
+    '⬇': 'Mexico, Spain, Mexico, Mexico, Mexico',
+    '⭐': 'France, United States, United States, Belgium, Belgium',
+    '🌊': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States',
+    '🌍': 'France, France',
+    '🍊': 'United States',
+    '🍌': 'United States',
+    '🍒': 'United States',
+    '🍷': 'United States',
+    '🍿': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States',
+    '🎂': 'United States',
+    '🎤': 'United States',
+    '🎥': 'Venezuela',
+    '🎯': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States',
+    '🏆': 'Jamaica, Jamaica, Jamaica, Australia, Australia, Australia',
+    '🏻': 'United States, United States, United States, United States, '
+         'Netherlands, United States, United States, United States',
+    '🏼': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'Canada, Canada, United States, United States, United States, United '
+         'States, United States, Mexico, United States, United States',
+    '🏽': 'United States, United States, United States, United States, United '
+         'States, United States, Denmark, United States',
+    '🐂': 'Spain',
+    '🐊': 'United States, United States',
+    '🐍': 'United States, United States, United States',
+    '🐻': 'Spain',
+    '👀': 'United States, United States, United States',
+    '👇': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, Netherlands, United States, United States, United States, '
+         'France, France, France, United Kingdom, United Kingdom, United '
+         'Kingdom, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, Canada, Canada, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, Mexico',
+    '👉': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States',
+    '👊': 'United States',
+    '👋': 'United States, United States, United States, United States',
+    '👍': 'Canada, Canada, Canada, Canada, Canada, United States, United '
+         'States, United States, United States, United States, United States, '
+         'Canada',
+    '👎': 'United States, United States',
+    '👏': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States',
+    '👺': 'United States, United States',
+    '💀': 'United States, United States',
+    '💁': 'United States',
+    '💖': 'United States, Australia',
+    '💛': 'United States',
+    '💣': 'United States, United States, United States, United States',
+    '💥': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         ', , , , , , , , , , United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United Kingdom, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States',
+    '💩': 'United States, United States, United States, United States',
+    '💪': 'United States',
+    '💯': 'United States, United States, France',
+    '💰': 'Canada',
+    '💸': 'United States',
+    '📍': 'United States',
+    '📺': 'Canada',
+    '🔁': 'United States',
+    '🔊': 'Spain',
+    '🔥': 'United States, United States, United States, United States, United '
+         'States, United States, Australia, Australia, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States',
+    '🔻': 'Mexico',
+    '🔼': 'United States',
+    '🔽': 'United States',
+    '🖕': 'United States, United States, United States',
+    '😀': 'United States, Canada',
+    '😁': 'United States, Switzerland, Switzerland, Switzerland, United States, '
+         'United Kingdom',
+    '😂': 'United States, United States, United States, Germany, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, Ghana, Ghana, Ghana, Ghana, Ghana, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United Kingdom, United '
+         'Kingdom, United Kingdom, United Kingdom, United Kingdom, United '
+         'Kingdom, United Kingdom, United Kingdom, United Kingdom, United '
+         'Kingdom, United Kingdom, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'Canada, Canada, Canada, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States',
+    '😄': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, Canada, United '
+         'States, United States, United States, United States, Canada, United '
+         'Kingdom, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States',
+    '😅': 'United States',
+    '😈': 'United States, United States',
+    '😉': 'United States',
+    '😊': 'United States, United States, United States, United States, United '
+         'States, United States, Australia, United States',
+    '😋': 'United States, United States, United States',
+    '😎': 'United States, United States, Turkey, United States, Turkey, Turkey, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, Canada, '
+         'United Kingdom, United States, United States, United States',
+    '😏': 'United States',
+    '😐': 'United States',
+    '😘': 'Venezuela',
+    '😙': 'Venezuela',
+    '😚': 'Venezuela',
+    '😝': 'Colombia',
+    '😠': 'United States, United States, United States, United States, United '
+         'States, United States',
+    '😡': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States',
+    '😢': 'United States',
+    '😣': 'United Kingdom, United Kingdom, United Kingdom, United Kingdom, '
+         'United Kingdom, United Kingdom',
+    '😤': 'United States, United States',
+    '😥': 'United States',
+    '😩': 'United States',
+    '😬': ', ',
+    '😲': 'United States, United States',
+    '😳': ', , , , United States',
+    '😺': 'United States, United States, United States',
+    '🙀': 'United States, United States',
+    '🙂': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States',
+    '🙄': 'United States, United States, United States, United States, United '
+         'States, United States, , , , , United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States',
+    '🙆': 'United States',
+    '🙈': 'Ireland',
+    '🙋': 'United States, United States, United States',
+    '🙌': 'Denmark',
+    '🙏': 'United States, United States, United States, United States, United '
+         'States, United States, United States, Italy',
+    '🚂': 'United States',
+    '🚢': 'United States',
+    '🚨': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States',
+    '🚫': 'United States',
+    '🛑': 'United States, United States, Jersey, Jersey, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States',
+    '🤔': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, Australia, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States',
+    '🤗': 'United States',
+    '🤡': 'United States, United States, United States, United States, United '
+         'States, United States, United States',
+    '🤣': 'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, United States, United States, United '
+         'States, Canada, Canada, Canada, Canada, Canada, United States, '
+         'United States, United States, United States, United States, United '
+         'States, United States, United States, United States, United States, '
+         'United States, United States, Georgia',
+    '🤥': 'United States',
+    '🤷': 'United States, United States, United States, United States'}
+
+ Emoji Count Map: [   ('💥', 294),
+    ('😂', 144),
+    ('✔', 106),
+    ('🤔', 105),
+    ('‼', 98),
+    ('👇', 92),
+    ('🔥', 86),
+    ('😄', 59),
+    ('🏼', 39),
+    ('🤣', 39),
+    ('😡', 37),
+    ('🍿', 36),
+    ('😎', 32),
+    ('✅', 31),
+    ('🙄', 29),
+    ('🚨', 29),
+    ('👏', 28),
+    ('❓', 27),
+    ('🛑', 25),
+    ('⚡', 22),
+    ('👍', 22),
+    ('👉', 22),
+    ('❗', 21),
+    ('🌊', 16),
+    ('🙂', 14),
+    ('🏻', 13),
+    ('🏽', 13),
+    ('⁉', 13),
+    ('😠', 12),
+    ('🙏', 11),
+    ('😊', 11),
+    ('🎯', 10),
+    ('🏆', 10),
+    ('♀', 9),
+    ('➖', 8),
+    ('🤷', 7),
+    ('➡', 7),
+    ('🤡', 7),
+    ('😁', 6),
+    ('😣', 6),
+    ('⭐', 5),
+    ('⬇', 5),
+    ('❤', 5),
+    ('😳', 5),
+    ('💯', 4),
+    ('👀', 4),
+    ('🖕', 4),
+    ('💩', 4),
+    ('😋', 4),
+    ('💣', 4),
+    ('👋', 4),
+    ('😺', 3),
+    ('😲', 3),
+    ('🙋', 3),
+    ('👊', 3),
+    ('🐍', 3),
+    ('😤', 3),
+    ('❌', 3),
+    ('😀', 2),
+    ('💰', 2),
+    ('✨', 2),
+    ('⚠', 2),
+    ('🐊', 2),
+    ('💀', 2),
+    ('🙀', 2),
+    ('👎', 2),
+    ('👺', 2),
+    ('🎤', 2),
+    ('😉', 2),
+    ('😬', 2),
+    ('✊', 2),
+    ('♦', 2),
+    ('😈', 2),
+    ('😝', 2),
+    ('💖', 2),
+    ('🌍', 2),
+    ('📍', 1),
+    ('🍌', 1),
+    ('🎶', 1),
+    ('🔊', 1),
+    ('🔼', 1),
+    ('🔽', 1),
+    ('🚩', 1),
+    ('🙆', 1),
+    ('💪', 1),
+    ('☺', 1),
+    ('😩', 1),
+    ('🚫', 1),
+    ('😒', 1),
+    ('📻', 1),
+    ('💁', 1),
+    ('🍊', 1),
+    ('😆', 1),
+    ('🐻', 1),
+    ('⬆', 1),
+    ('🐂', 1),
+    ('🚂', 1),
+    ('⚽', 1),
+    ('🔻', 1),
+    ('🍒', 1),
+    ('😢', 1),
+    ('😥', 1),
+    ('🕵', 1),
+    ('♂', 1),
+    ('😅', 1),
+    ('😍', 1),
+    ('🍼', 1),
+    ('😘', 1),
+    ('😙', 1),
+    ('😚', 1),
+    ('🍕', 1),
+    ('🐰', 1),
+    ('🌪', 1),
+    ('🎀', 1),
+    ('🍷', 1),
+    ('🤗', 1),
+    ('🔴', 1),
+    ('🔳', 1),
+    ('🔷', 1),
+    ('🙌', 1),
+    ('⬅', 1),
+    ('🙈', 1),
+    ('💸', 1),
+    ('👶', 1),
+    ('🔁', 1),
+    ('⏰', 1),
+    ('🤥', 1),
+    ('📺', 1),
+    ('💛', 1),
+    ('👌', 1),
+    ('🍦', 1),
+    ('🎥', 1),
+    ('🚢', 1),
+    ('😱', 1),
+    ('😯', 1),
+    ('🎂', 1),
+    ('😐', 1),
+    ('😜', 1),
+    ('▶', 1),
+    ('😏', 1)]

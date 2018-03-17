@@ -1,0 +1,104 @@
+Final Report:
+
+500 Total tweets were looked at
+144 of those tweets that contained emojis
+80 of Emoji Tweets had locations
+
+Country Map: {   '': '🔴⚪🔵🔴⚪🔵😋🆘‼🛡⚔🆘‼🛡⚔🆘‼🛡⚔🔴⚪🔵🔴⚪🔵🆘‼🛡⚔☀☀🆘‼🛡⚔🔴⚪🔵🆘‼🛡⚔💯🙏💯🆘‼🛡⚔🆘‼🛡⚔🆘‼🛡⚔🔴⚪🔵🔴⚪🔵🔴⚪🔵🆘‼🛡⚔🆘‼🛡⚔🔴⚪🔵🔴⚪🔵🆘‼🛡⚔😂🆘‼🛡⚔😉🏁🆘‼🛡⚔',
+    'Alabama': '🆘‼🛡⚔',
+    'California': '🔴⚪🔵🔴⚪🔵🔴⚪🔵🔴⚪🔵🔴⚪🔵🔴⚪🔵🔴⚪🔵🔴⚪🔵☀👉',
+    'Colorado': '😂🔴⚪🔵🔴⚪🔵🆘‼🛡⚔',
+    'Florida': '🔥🔥🔥🔥📢🙏💥💯😂🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🏈🔴⚪🔵😂🔴⚪🔵🔴⚪🔵🔴⚪🔵',
+    'Massachusetts': '🔴⚪🔵🔴⚪🔵',
+    'Michigan': '🔴⚪🔵💯🙏💯🔴⚪🔵🔴⚪🔵',
+    'Mississippi': '🔥🔥🔥🔥📢',
+    'New Hampshire': '🏈',
+    'New Jersey': '🔴⚪🔵🙏💥💯😉',
+    'New York': '😂🙋🦅🦅🦅🦅🔥🔥🔥🔥📢',
+    'New YorkNew York': '🔴⚪🔵🔴⚪🔵🔴⚪🔵🔴⚪🔵',
+    'North Carolina': '☀☀🙋🦅🦅🦅🦅',
+    'Ohio': '🔴⚪🔵🔴⚪🔵',
+    'Oregon': '☀☀🔴⚪🔵🔴⚪🔵',
+    'Pennsylvania': '🔴⚪🔵🔴⚪🔵🔴⚪🔵📡',
+    'Tennessee': '🔴⚪🔵',
+    'Texas': '🔴⚪🔵🔴⚪🔵😂🔴⚪🔵🔴⚪🔵🔴⚪🔵🔴⚪🔵🔴⚪🔵🔥🔥🔥🔥📢',
+    'Virginia': '📡🔴⚪🔵🔴⚪🔵🔴⚪🔵',
+    'Washington': '🙏💥💯💯🙏💯'}
+
+ Emoji Map: {   '‼': ', , Alabama, , , , , , , , , Colorado, , , , ',
+    '☀': ', , Oregon, Oregon, California, North Carolina, North Carolina',
+    '⚔': ', , Alabama, , , , , , , , , Colorado, , , , ',
+    '⚪': ', , Texas, Texas, California, California, California, New Jersey, '
+         'California, , , New YorkNew York, New YorkNew York, Texas, , '
+         'Massachusetts, Pennsylvania, Pennsylvania, Texas, Texas, Colorado, '
+         'Colorado, New YorkNew York, New YorkNew York, Texas, , Texas, , , '
+         'California, California, Pennsylvania, Florida, Tennessee, , , '
+         'Virginia, Virginia, Virginia, California, California, Florida, '
+         'Florida, Florida, Michigan, Ohio, Ohio, Massachusetts, Michigan, '
+         'Michigan, Oregon, Oregon',
+    '🆘': ', , Alabama, , , , , , , , , Colorado, , , , ',
+    '🏁': '',
+    '🏈': 'Florida, Florida, Florida, Florida, Florida, Florida, Florida, '
+         'Florida, Florida, Florida, Florida, Florida, Florida, Florida, '
+         'Florida, Florida, New Hampshire',
+    '👉': 'California',
+    '💥': 'Florida, Washington, New Jersey',
+    '💯': 'Florida, , , Washington, Washington, Washington, New Jersey, '
+         'Michigan, Michigan',
+    '📡': 'Virginia, Pennsylvania',
+    '📢': 'Florida, Texas, Mississippi, New York',
+    '🔥': 'Florida, Florida, Florida, Florida, Texas, Texas, Texas, Texas, '
+         'Mississippi, Mississippi, Mississippi, Mississippi, New York, New '
+         'York, New York, New York',
+    '🔴': ', , Texas, Texas, California, California, California, New Jersey, '
+         'California, , , New YorkNew York, New YorkNew York, Texas, , '
+         'Massachusetts, Pennsylvania, Pennsylvania, Texas, Texas, Colorado, '
+         'Colorado, New YorkNew York, New YorkNew York, Texas, , Texas, , , '
+         'California, California, Pennsylvania, Florida, Tennessee, , , '
+         'Virginia, Virginia, Virginia, California, California, Florida, '
+         'Florida, Florida, Michigan, Ohio, Ohio, Massachusetts, Michigan, '
+         'Michigan, Oregon, Oregon',
+    '🔵': ', , Texas, Texas, California, California, California, New Jersey, '
+         'California, , , New YorkNew York, New YorkNew York, Texas, , '
+         'Massachusetts, Pennsylvania, Pennsylvania, Texas, Texas, Colorado, '
+         'Colorado, New YorkNew York, New YorkNew York, Texas, , Texas, , , '
+         'California, California, Pennsylvania, Florida, Tennessee, , , '
+         'Virginia, Virginia, Virginia, California, California, Florida, '
+         'Florida, Florida, Michigan, Ohio, Ohio, Massachusetts, Michigan, '
+         'Michigan, Oregon, Oregon',
+    '😂': 'New York, Texas, Colorado, Florida, Florida, ',
+    '😉': ', New Jersey',
+    '😋': '',
+    '🙋': 'New York, North Carolina',
+    '🙏': 'Florida, , Washington, Washington, New Jersey, Michigan',
+    '🛡': ', , Alabama, , , , , , , , , Colorado, , , , ',
+    '🦅': 'New York, New York, New York, New York, North Carolina, North '
+         'Carolina, North Carolina, North Carolina'}
+
+ Emoji Count Map: {   '‼': 41,
+    '☀': 9,
+    '⚔': 39,
+    '⚪': 83,
+    '🆘': 41,
+    '🏁': 1,
+    '🏆': 1,
+    '🏈': 17,
+    '👉': 1,
+    '👌': 1,
+    '💥': 5,
+    '💯': 14,
+    '📡': 2,
+    '📢': 7,
+    '🔥': 30,
+    '🔴': 83,
+    '🔵': 83,
+    '😂': 11,
+    '😇': 1,
+    '😉': 2,
+    '😋': 1,
+    '😎': 1,
+    '😑': 1,
+    '🙋': 2,
+    '🙏': 11,
+    '🛡': 39,
+    '🦅': 8}
