@@ -70,9 +70,6 @@ gmaps = googlemaps.Client(key=map_key);
 # Twitter API keys
 consumer_key = 'Oi9h0A02ZOXMIDzoXsy6sWwHl'
 consumer_secret = 'Hh8dBjAP8KTGB2n7gg845WvOXSjm4MlAHntrxbu5DnhTmI8ysi'
-# access_token = '959207976199483393-0AOwXscYZyRqLvEToTb8xeHqZP69g8F'    TODO: Delete this and next line if not needed
-# access_secret = 'wbcqyeOGWvamz0nO0HaRIzcMs6r8yyEzWvLBV75PxjzKS'
-
 auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
@@ -152,9 +149,9 @@ def insert_location_map(location, status):
     for char in status:
         if(char_is_emoji(char)):
             if location in location_map:
-                location_map[location] += char;
+                location_map[location].append(char);
             else:
-                location_map[location] = char;
+                location_map[location] = [char];
 
 # insert emoji-country pair into map
 def insert_emoji_map(status, location):
@@ -164,12 +161,12 @@ def insert_emoji_map(status, location):
                 emoji_count_map[char] += 1;
             else:
                 emoji_count_map[char] = 1;
-            
+
             if location is not "none":
                 if char in emoji_map:
-                    emoji_map[char] += ", {}".format(location);
+                    emoji_map[char].append(location);
                 else:
-                    emoji_map[char] = location;
+                    emoji_map[char] = [location];
 
 
 
@@ -198,7 +195,7 @@ def main():
     global stat
     global emojistat
     global hasLoc
-    
+
     try:
         if international:
             for status in tqdm(limit_handled(tweepy.Cursor(api.search, q=search_query, count=tweets_per_query).items(MAX_TWEETS))):
@@ -232,7 +229,7 @@ main();
 
 # TODO:
 
-# make Command line interface
+# finish Command line interface
 # add timing from tqdm to final report
 # add graphs to final report
 # 'New YorkNew York' error?
@@ -241,19 +238,18 @@ main();
 
 
 
-
 #Graphing Methods:
 
 # # # Bar Chart
-# # labels = 'Brady', 'Gronkowski', 'Amendola'
-# # y_pos = np.arange(len(labels)) #same as range(len(labels))
-# # retweets = [brady, gronk, dola]
-# # plt.bar(y_pos, retweets, align='center', alpha=1)
-# # plt.xticks(y_pos, retweets)
-# # plt.ylabel('Mentions')
-# # plt.xlabel('Player')
-# # plt.title('Patriots Mentions')
-# # plt.show()
+# labels = 'Brady', 'Gronkowski', 'Amendola'
+# y_pos = np.arange(len(labels)) #same as range(len(labels))
+# retweets = [brady, gronk, dola]
+# plt.bar(y_pos, retweets, align='center', alpha=1)
+# plt.xticks(y_pos, retweets)
+# plt.ylabel('Mentions')
+# plt.xlabel('Player')
+# plt.title('Patriots Mentions')
+# plt.show()
 
 
 # # #pie chart, where slices will be ordered and plotted counter-clockwise
@@ -262,6 +258,3 @@ main();
 # # ax1.pie(retweets, explode=explode, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
 # # ax1.axis('equal')
 # # plt.show()
-
-
-
