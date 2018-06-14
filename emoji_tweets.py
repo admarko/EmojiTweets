@@ -56,6 +56,7 @@ states = {'Alabama','Alaska','Arizona','Arkansas','California','Colorado',
 # international = args.international
 # search_query = args.query
 
+#TODO: fix README once argparse is done
 
 #API:
 
@@ -76,7 +77,6 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 if (not api):
     print ("Can't Authenticate")
     sys.exit(-1)
-
 
 # pause tweets
 def limit_handled(cursor):
@@ -228,7 +228,6 @@ main();
 
 
 # TODO:
-
 # finish Command line interface
 # add timing from tqdm to final report
 # add graphs to final report
