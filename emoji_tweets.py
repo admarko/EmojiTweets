@@ -1,30 +1,44 @@
-#  Olympics + Emojis
-#  Final Proj for LING 23700: Langugage & the Internet
-#  Last Modified by Alex Markowitz on 3/1/18.
-
+#  emoji_tweets
+#  Based off final proj for LING 23700: Langugage & the Internet (3/9/18)
+#  Last Modified by Alex Markowitz on 6/17/18.
 import os                               # For report logging
 import json                             # JSON formatting
 import emoji                            # emoji database
-import googlemaps                       # googlemaps api
+import tweepy                           # twitter parsing
 import pprint                           # Data Pretty Printer
+import argparse                         # command line interface
+import googlemaps                       # googlemaps api
 import matplotlib.pyplot as plt         # graphing
 import pandas as pd                     # data
 import numpy as np                      # data
-import tweepy                           # twitter parsing
 from operator import itemgetter         # Dictionary sort
 from tqdm import tqdm                   # progress bar
 
-# Global Variables
+# Parse command line options
+parser = argparse.ArgumentParser("python emoji_tweets.py", usage='%(prog)s [-h] [-v, --version] [-n, --numtweets] [-q, --query] [-usa]')
+parser.add_argument("-v", "--version", help="version number of application", action="store_true")
+parser.add_argument("-n", "--numtweets", type=int, default=100, help="amount of tweets to scrape")
+parser.add_argument("-q", "--query", help="query to search on", metavar='')
+parser.add_argument("-usa", help="international by default", action="store_true")
+args = parser.parse_args()
 
-MAX_TWEETS = 100;           # Total number of tweets to scrape
-search_query = "test";      # Query to search
-tweets_per_query = 100;     # 100 tweets at once
-international = True;       # False searches domestically
+if args.version:
+    print("Version 2.1 of emoji_tweets")
+    exit()
 
-emojistat = 0;
-stat = 0;
-hasLoc = 0;
+if not args.query:
+    print("You must enter a search query. Try again...")
+    exit()
 
+#########################
+###  Global Variables ###
+#########################
+international = not args.usa        # False searches domestically
+search_query = args.query           # query to search for on twitter
+MAX_TWEETS = args.numtweets         # Total number of tweets to scrape
+tweets_per_query = 100;             # 100 tweets at once
+
+# dictionaries
 location_map = {};
 emoji_map = {};
 emoji_count_map = {};
@@ -38,29 +52,11 @@ states = {'Alabama','Alaska','Arizona','Arkansas','California','Colorado',
 'Rhode Island', 'South Carolina','South Dakota','Tennessee','Texas','Utah',
 'Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'};
 
-# Parse command line options
-# parser = argparse.ArgumentParser("python emoji_tweets.py", usage='%(prog)s [-h] [-v] [-t tweets] [-q query] [--d domestic]')
-# parser.add_argument("-v", "--version", help="version number of application", action="store_true")
-# parser.add_argument("-t", "--tweets", type="int", default=100, help="amount of tweets to scrape")
-# parser.add_argument("-q", "--query", type=string??, help="query to search on", metavar='')
-# parser.add_argument("-d", "--domestic", help="international by default", metavar='')
-# args = parser.parse_args()
+#################
+#####  APIs #####
+#################
 
-# if args.version:
-#     print "Version 2.0 of emoji_tweets"
-#     exit()
-
-# if args.domestic:
-#     international = False;
-
-# international = args.international
-# search_query = args.query
-
-#TODO: fix README once argparse is done
-
-#API:
-
-# Google Maps API Keys
+# Google Maps API Keys (extras included)
 #1: "AIzaSyBrsqIQyfG8napKGOAqN-Ukg3HKZBbkdvY" - crashed on 15k - gmaps error
 #2: "AIzaSyD6YCa6XnkdGipnwGUD_31u86PEZd5znjI" - crashed on 14k - gmaps error
 #3: "AIzaSyAZzDMrQ5p5urgxQkyBdeG07dH04_QAb7I" - got 20k - (MRU)
@@ -86,9 +82,9 @@ def limit_handled(cursor):
         except tweepy.RateLimitError:
             time.sleep(10 * 30)
 
-
-
-#Emoji Methods:
+##########################
+#####  Emoji Methods #####
+##########################
 
 # Return true if char is an emoji
 def char_is_emoji(character):
@@ -101,15 +97,15 @@ def status_has_emoji(text):
             return True
     return False
 
-
-
-#Location Methods:
+#############################
+#####  Location Methods #####
+#############################
 
 # parse GoogleMaps JSON response
 def getLocation(addr):
     loc = ""
     addCompLen = len(addr)
-    for  i in range (0, addCompLen):
+    for  i in range(0, addCompLen):
         try:
             if international:
                 if (addr[i]["types"][0] == "country"):
@@ -140,9 +136,9 @@ def status_has_location(status):
     else:
         return False;
 
-
-
-#Map Methods:
+###############################
+#####  Dictionary Methods #####
+###############################
 
 # insert country-emoji pair into map
 def insert_location_map(location, status):
@@ -168,9 +164,9 @@ def insert_emoji_map(status, location):
                 else:
                     emoji_map[char] = [location];
 
-
-
-#Script Methods:
+################################
+#####  main script methods #####
+################################
 
 # Print final report with statistics to console
 def report(stat, emojistat, hasLoc):
@@ -182,7 +178,7 @@ def report(stat, emojistat, hasLoc):
     file.write("%s of those tweets contained emojis\n" %(emojistat));
     file.write("%s of Emoji Tweets had locations\n\n" %(hasLoc));
     pp = pprint.PrettyPrinter(indent=4, stream=file);
-    file.write("Country Map: ")
+    file.write("Location Map: ")
     pp.pprint(location_map);
     file.write("\n Emoji Map: ")
     pp.pprint(emoji_map);
@@ -191,10 +187,11 @@ def report(stat, emojistat, hasLoc):
     print ("Report published: looked at %s tweets on \"%s\" %s.\n" %(stat, search_query, locale));
 
 # loop through MAX_TWEETS tweets to gather data
-def main():
-    global stat
-    global emojistat
-    global hasLoc
+if __name__ == "__main__":
+    # counts
+    emojistat = 0;
+    stat = 0;
+    hasLoc = 0;
 
     try:
         if international:
@@ -227,17 +224,25 @@ main();
 
 
 
+
+
+
+
+
+
+
 # TODO:
-# finish Command line interface
 # add timing from tqdm to final report
-# add graphs to final report
-# 'New YorkNew York' error?
 # clump repeated values into array of arrays
+# 'New YorkNew York' error?
+# add graphs to final report
 # make web interface
 
 
 
-#Graphing Methods:
+#############################
+#####  Graphing Methods #####
+#############################
 
 # # # Bar Chart
 # labels = 'Brady', 'Gronkowski', 'Amendola'
