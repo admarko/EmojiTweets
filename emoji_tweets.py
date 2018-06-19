@@ -187,7 +187,8 @@ def report(stat, emojistat, hasLoc):
     print ("Report published: looked at %s tweets on \"%s\" %s.\n" %(stat, search_query, locale));
 
 # loop through MAX_TWEETS tweets to gather data
-if __name__ == "__main__":
+#if __name__ == "__main__":
+def main():
     # counts
     emojistat = 0;
     stat = 0;
