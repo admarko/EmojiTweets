@@ -33,6 +33,7 @@ if not args.query:
 #########################
 ###  Global Variables ###
 #########################
+
 international = not args.usa        # False searches domestically
 search_query = args.query           # query to search for on twitter
 MAX_TWEETS = args.numtweets         # Total number of tweets to scrape
@@ -71,7 +72,7 @@ auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 if (not api):
-    print ("Can't Authenticate")
+    print("Can't Authenticate")
     sys.exit(-1)
 
 # pause tweets
