@@ -6,7 +6,8 @@ emoji_tweets.py     -Run this.
                       [-n] is the max number of tweets to scrape (100 by
                         default), [-q] is the search query to test, and [-usa]
                         is used to search domestically rather than internationally  
-                    -Sample usage: `python3 emoji_tweets.py -n 10000 -q olympics`  
+                    -Sample usage: `python3 emoji_tweets.py -n 10000 -q olympics` 
+config.py 			-Stores API keys (not committed to Github) 
 reports             -folder containing all output files
                     -files named: "report_[-n]_tweets_on_[-q]"  
 README              -this file  

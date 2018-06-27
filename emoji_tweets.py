@@ -6,6 +6,7 @@ import json                             # JSON formatting
 import emoji                            # emoji database
 import tweepy                           # twitter parsing
 import pprint                           # Data Pretty Printer
+import config                           # For API keys stored in separate file
 import argparse                         # command line interface
 import googlemaps                       # googlemaps api
 import matplotlib.pyplot as plt         # graphing
@@ -57,18 +58,10 @@ states = {'Alabama','Alaska','Arizona','Arkansas','California','Colorado',
 #####  APIs #####
 #################
 
-# Google Maps API Keys (extras included)
-#1: "AIzaSyBrsqIQyfG8napKGOAqN-Ukg3HKZBbkdvY" - crashed on 15k - gmaps error
-#2: "AIzaSyD6YCa6XnkdGipnwGUD_31u86PEZd5znjI" - crashed on 14k - gmaps error
-#3: "AIzaSyAZzDMrQ5p5urgxQkyBdeG07dH04_QAb7I" - got 20k - (MRU)
-#4: "AIzaSyDUnd0ShyjSDwBbGJkUlQbcyAmLDGvVsXA" - crashed on 100 - gmaps error
-map_key = "AIzaSyDUnd0ShyjSDwBbGJkUlQbcyAmLDGvVsXA"
-gmaps = googlemaps.Client(key=map_key)
+gmaps = googlemaps.Client(key=config.gmapkey1) #4 keys to deal with google limits
 
 # Twitter API keys
-consumer_key = 'Oi9h0A02ZOXMIDzoXsy6sWwHl'
-consumer_secret = 'Hh8dBjAP8KTGB2n7gg845WvOXSjm4MlAHntrxbu5DnhTmI8ysi'
-auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
+auth = tweepy.AppAuthHandler(config.consumer_key, config.consumer_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 if (not api):
