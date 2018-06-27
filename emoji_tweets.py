@@ -37,12 +37,12 @@ if not args.query:
 international = not args.usa        # False searches domestically
 search_query = args.query           # query to search for on twitter
 MAX_TWEETS = args.num               # Total number of tweets to scrape
-tweets_per_query = 100;             # 100 tweets at once
+tweets_per_query = 100              # 100 tweets at once
 
 # dictionaries
-location_map = {};
-emoji_map = {};
-emoji_count_map = {};
+emoji_map = {}
+location_map = {}
+emoji_count_map = {}
 
 states = {'Alabama','Alaska','Arizona','Arkansas','California','Colorado',
 'Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois',
@@ -63,7 +63,7 @@ states = {'Alabama','Alaska','Arizona','Arkansas','California','Colorado',
 #3: "AIzaSyAZzDMrQ5p5urgxQkyBdeG07dH04_QAb7I" - got 20k - (MRU)
 #4: "AIzaSyDUnd0ShyjSDwBbGJkUlQbcyAmLDGvVsXA" - crashed on 100 - gmaps error
 map_key = "AIzaSyDUnd0ShyjSDwBbGJkUlQbcyAmLDGvVsXA"
-gmaps = googlemaps.Client(key=map_key);
+gmaps = googlemaps.Client(key=map_key)
 
 # Twitter API keys
 consumer_key = 'Oi9h0A02ZOXMIDzoXsy6sWwHl'
@@ -110,13 +110,13 @@ def getLocation(addr):
         try:
             if international:
                 if (addr[i]["types"][0] == "country"):
-                    loc += addr[i]["long_name"];
+                    loc += addr[i]["long_name"]
             else:
                 if (addr[i]["long_name"] in states):
-                    loc += addr[i]["long_name"];
+                    loc += addr[i]["long_name"]
         except:
-            print(" Error: country doesn't exist in JSON");
-            report(stat, emojistat, hasLoc);
+            print(" Error: country doesn't exist in JSON")
+            report(stat, emojistat, hasLoc)
     return loc
 
 # Return true if tweet came from valid location as determined by GoogleMaps API
@@ -128,12 +128,12 @@ def status_has_location(status):
             if (gmaps.geocode(initloc)):
                 location = getLocation(gmaps.geocode(initloc)[0]["address_components"])
                 if location is not '':
-                    insert_location_map(location, status.text);
-                    insert_emoji_map(status.text, location);
+                    insert_location_map(location, status.text)
+                    insert_emoji_map(status.text, location)
                     return True;
         except Exception as e:
-            print (" GoogleMaps API error: " + str(e));
-            report(stat, emojistat, hasLoc);
+            print (" GoogleMaps API error: " + str(e))
+            report(stat, emojistat, hasLoc)
     else:
         return False;
 
@@ -146,24 +146,30 @@ def insert_location_map(location, status):
     for char in status:
         if(char_is_emoji(char)):
             if location in location_map:
-                location_map[location].append(char);
+                location_map[location].append(char)
             else:
-                location_map[location] = [char];
+                location_map[location] = [char]
 
 # insert emoji-country pair into map
 def insert_emoji_map(status, location):
     for char in status:
         if(char_is_emoji(char)):
             if char in emoji_map:
-                emoji_count_map[char] += 1;
+                emoji_count_map[char] += 1
             else:
-                emoji_count_map[char] = 1;
+                emoji_count_map[char] = 1
 
             if location is not "none":
                 if char in emoji_map:
+                    # if location in emoji_map[char]:
+                    #     temp = emoji_map[char][location].get()
+                    #     emoji_map[char][location] = temp + 1
+                    # else: 
+                    #     emoji_map[char].append({location, 1})
                     emoji_map[char].append(location);
                 else:
-                    emoji_map[char] = [location];
+                    emoji_map[char] = [location]
+                    #emoji_map[char] = {location, 1};
 
 ################################
 #####  main script methods #####
@@ -171,58 +177,58 @@ def insert_emoji_map(status, location):
 
 # Print final report with statistics to console
 def report(stat, emojistat, hasLoc):
-    filename = "report_" + str(stat) + "_tweets_on_" + search_query + ".txt";
-    file = open(os.path.join('reports',filename), "w");
-    file.write("Final Report:\n\n");
-    locale = 'internationally' if international else 'domestically';
-    file.write("%s Total tweets were looked at on search query \"%s\" %s\n" %(stat, search_query, locale));
-    file.write("%s of those tweets contained emojis\n" %(emojistat));
-    file.write("%s of Emoji Tweets had locations\n\n" %(hasLoc));
-    pp = pprint.PrettyPrinter(indent=4, stream=file);
+    filename = "report_" + str(stat) + "_tweets_on_" + search_query + ".txt"
+    file = open(os.path.join('reports',filename), "w")
+    file.write("Final Report:\n\n")
+    locale = 'internationally' if international else 'domestically'
+    file.write("%s Total tweets were looked at on search query \"%s\" %s\n" %(stat, search_query, locale))
+    file.write("%s of those tweets contained emojis\n" %(emojistat))
+    file.write("%s of Emoji Tweets had locations\n\n" %(hasLoc))
+    pp = pprint.PrettyPrinter(indent=4, stream=file)
     file.write("Location Map: ")
-    pp.pprint(location_map);
+    pp.pprint(location_map)
     file.write("\n Emoji Map: ")
-    pp.pprint(emoji_map);
+    pp.pprint(emoji_map)
     file.write("\n Emoji Count Map: ")
-    pp.pprint(sorted(emoji_count_map.items(), key=itemgetter(1), reverse=True));
-    print ("Report published: looked at %s tweets on \"%s\" %s.\n" %(stat, search_query, locale));
+    pp.pprint(sorted(emoji_count_map.items(), key=itemgetter(1), reverse=True))
+    print ("Report published: looked at %s tweets on \"%s\" %s.\n" %(stat, search_query, locale))
 
 # loop through MAX_TWEETS tweets to gather data
 #if __name__ == "__main__":
 def main():
     # global counts
-    emojistat = 0;
-    stat = 0;
-    hasLoc = 0;
+    emojistat = 0
+    hasLoc = 0
+    stat = 0
 
     try:
         if international:
             for status in tqdm(limit_handled(tweepy.Cursor(api.search, q=search_query, count=tweets_per_query).items(MAX_TWEETS))):
                 stat += 1
                 if(status_has_emoji(status.text)):
-                    emojistat += 1;
+                    emojistat += 1
                     if (status_has_location(status)):
-                        hasLoc += 1;
+                        hasLoc += 1
                     else:
-                        insert_emoji_map(status.text, "none");
+                        insert_emoji_map(status.text, "none")
         else:
             # Geocode is [lat,long,rad] of geographic center of continental US - geocode="39.50,-98.35,1500mi"
             for status in tqdm(limit_handled(tweepy.Cursor(api.search, q=search_query, count=tweets_per_query, geocode="39.50,-98.35,1500mi").items(MAX_TWEETS))):
                 stat += 1
                 if(status_has_emoji(status.text)):
-                    emojistat += 1;
+                    emojistat += 1
                     if (status_has_location(status)):
-                        hasLoc += 1;
+                        hasLoc += 1
                     else:
-                        insert_emoji_map(status.text, "none");
+                        insert_emoji_map(status.text, "none")
     except tweepy.error.TweepError:
-        print (" Twiiter API error: Too many tweet requests");
+        print (" Twiiter API error: Too many tweet requests")
     except tweepy.TweepError as e:
         print(" Twitter API error: " + str(e))
-    report(stat, emojistat, hasLoc);
+    report(stat, emojistat, hasLoc)
 
 # Run main program
-main();
+main()
 
 
 
