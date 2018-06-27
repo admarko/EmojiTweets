@@ -17,7 +17,7 @@ from tqdm import tqdm                   # progress bar
 # Parse command line options
 parser = argparse.ArgumentParser("python emoji_tweets.py", usage='%(prog)s [-h] [-v, --version] [-n, --numtweets] [-q, --query] [-usa]')
 parser.add_argument("-v", "--version", help="version number of application", action="store_true")
-parser.add_argument("-n", "--numtweets", type=int, default=100, help="amount of tweets to scrape")
+parser.add_argument("-n", "--num", type=int, default=100, help="amount of tweets to scrape")
 parser.add_argument("-q", "--query", help="query to search on", metavar='')
 parser.add_argument("-usa", help="international by default", action="store_true")
 args = parser.parse_args()
@@ -36,7 +36,7 @@ if not args.query:
 
 international = not args.usa        # False searches domestically
 search_query = args.query           # query to search for on twitter
-MAX_TWEETS = args.numtweets         # Total number of tweets to scrape
+MAX_TWEETS = args.num               # Total number of tweets to scrape
 tweets_per_query = 100;             # 100 tweets at once
 
 # dictionaries
@@ -190,7 +190,7 @@ def report(stat, emojistat, hasLoc):
 # loop through MAX_TWEETS tweets to gather data
 #if __name__ == "__main__":
 def main():
-    # counts
+    # global counts
     emojistat = 0;
     stat = 0;
     hasLoc = 0;
