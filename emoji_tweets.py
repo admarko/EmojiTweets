@@ -233,7 +233,7 @@ main()
 
 
 # TODO:
-# add timing from tqdm to final report
+# add timing from tqdm to final report (built a timer instead?)
 # clump repeated values into array of arrays
 # 'New YorkNew York' error?
 # add graphs to final report
