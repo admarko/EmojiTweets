@@ -12,10 +12,12 @@ import googlemaps                       # googlemaps api
 import matplotlib.pyplot as plt         # graphing
 import pandas as pd                     # data
 import numpy as np                      # data
+from datetime import datetime           # Timer
 from operator import itemgetter         # Dictionary sort
 from tqdm import tqdm                   # progress bar
 
-# Parse command line options
+# Parse command line options and set timer
+startTime = datetime.now()
 parser = argparse.ArgumentParser("python emoji_tweets.py", usage='%(prog)s [-h] [-v, --version] [-n, --numtweets] [-q, --query] [-usa]')
 parser.add_argument("-v", "--version", help="version number of application", action="store_true")
 parser.add_argument("-n", "--num", type=int, default=100, help="amount of tweets to scrape")
@@ -177,6 +179,8 @@ def report(stat, emojistat, hasLoc):
     file.write("%s Total tweets were looked at on search query \"%s\" %s\n" %(stat, search_query, locale))
     file.write("%s of those tweets contained emojis\n" %(emojistat))
     file.write("%s of Emoji Tweets had locations\n\n" %(hasLoc))
+    endtime = datetime.now() - startTime
+    file.write("In %s\n\n" %(endtime))
     pp = pprint.PrettyPrinter(indent=4, stream=file)
     file.write("Location Map: ")
     pp.pprint(location_map)
@@ -184,7 +188,8 @@ def report(stat, emojistat, hasLoc):
     pp.pprint(emoji_map)
     file.write("\n Emoji Count Map: ")
     pp.pprint(sorted(emoji_count_map.items(), key=itemgetter(1), reverse=True))
-    print ("Report published: looked at %s tweets on \"%s\" %s.\n" %(stat, search_query, locale))
+    endtime = datetime.now() - startTime
+    print ("Report published: looked at %s tweets on \"%s\" %s in %s.\n" %(stat, search_query, locale, endtime))
 
 # loop through MAX_TWEETS tweets to gather data
 #if __name__ == "__main__":
@@ -233,7 +238,6 @@ main()
 
 
 # TODO:
-# add timing from tqdm to final report (built a timer instead?)
 # clump repeated values into array of arrays
 # 'New YorkNew York' error?
 # add graphs to final report
