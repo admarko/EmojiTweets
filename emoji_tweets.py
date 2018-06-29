@@ -170,6 +170,20 @@ def insert_emoji_map(status, location):
 #####  main script methods #####
 ################################
 
+def timehelper(endtime):
+    hours, remainder = divmod(endtime.total_seconds(), 3600)
+    if hours == 0.0:
+        hours = ""
+    else: 
+        hours = str(hours) + ": h"
+    minutes, seconds = divmod(remainder, 60)
+    if minutes == 0.0:
+        minutes = ""
+    else: 
+        minutes = str(minutes) + ": m"
+    seconds = str(round(seconds, 2)) + "s"
+    return hours, minutes, seconds
+
 # Print final report with statistics to console
 def report(stat, emojistat, hasLoc):
     filename = "report_" + str(stat) + "_tweets_on_" + search_query + ".txt"
@@ -178,9 +192,9 @@ def report(stat, emojistat, hasLoc):
     locale = 'internationally' if international else 'domestically'
     file.write("%s Total tweets were looked at on search query \"%s\" %s\n" %(stat, search_query, locale))
     file.write("%s of those tweets contained emojis\n" %(emojistat))
-    file.write("%s of Emoji Tweets had locations\n\n" %(hasLoc))
-    endtime = datetime.now() - startTime
-    file.write("In %s\n\n" %(endtime))
+    file.write("%s of Emoji Tweets had locations\n" %(hasLoc))
+    hours, minutes, seconds = timehelper(datetime.now() - startTime)
+    file.write("In %s%s%s\n\n" %(hours, minutes, seconds))
     pp = pprint.PrettyPrinter(indent=4, stream=file)
     file.write("Location Map: ")
     pp.pprint(location_map)
@@ -188,8 +202,8 @@ def report(stat, emojistat, hasLoc):
     pp.pprint(emoji_map)
     file.write("\n Emoji Count Map: ")
     pp.pprint(sorted(emoji_count_map.items(), key=itemgetter(1), reverse=True))
-    endtime = datetime.now() - startTime
-    print ("Report published: looked at %s tweets on \"%s\" %s in %s.\n" %(stat, search_query, locale, endtime))
+    hours, minutes, seconds = timehelper(datetime.now() - startTime)
+    print ("Report published: looked at %s tweets on \"%s\" %s in %s%s%s.\n" %(stat, search_query, locale, hours, minutes, seconds))
 
 # loop through MAX_TWEETS tweets to gather data
 #if __name__ == "__main__":
