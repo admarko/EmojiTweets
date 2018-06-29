@@ -60,9 +60,10 @@ states = {'Alabama','Alaska','Arizona','Arkansas','California','Colorado',
 #####  APIs #####
 #################
 
-gmaps = googlemaps.Client(key=config.gmapkey1) #4 keys to deal with google limits
+# Google Maps Key: 4 keys to deal with Google's limits
+gmaps = googlemaps.Client(key=config.gmapkey1) 
 
-# Twitter API keys
+# Twitter API keys: using a Tweepy wrapper
 auth = tweepy.AppAuthHandler(config.consumer_key, config.consumer_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
@@ -176,14 +177,16 @@ def timehelper(endtime):
     if hours == 0.0:
         hours = ""
     else: 
-        hours = str(hours) + ": h"
+        hours = str(int(hours)) + "h"
     minutes, seconds = divmod(remainder, 60)
     if minutes == 0.0:
         minutes = ""
     else: 
-        minutes = str(minutes) + ": m"
+        minutes = str(int(minutes)) + "m"
     seconds = str(round(seconds, 2)) + "s"
-    return hours, minutes, seconds
+    time2 = "temp"
+    return hours, minutes, seconds, time2
+    # TODO: Test alternate time output HH:MM:SS.ms
 
 # Print final report with statistics to console
 def report(stat, emojistat, hasLoc):
@@ -198,8 +201,9 @@ def report(stat, emojistat, hasLoc):
     file.write("%s Total tweets were looked at on search query \"%s\" %s\n" %(stat, search_query, locale))
     file.write("%s of those tweets contained emojis\n" %(emojistat))
     file.write("%s of Emoji Tweets had locations\n" %(hasLoc))
-    hours, minutes, seconds = timehelper(datetime.now() - startTime)
-    file.write("In %s%s%s\n\n" %(hours, minutes, seconds))
+    hours, minutes, seconds, time2 = timehelper(datetime.now() - startTime)  # truncate this to one output once decided
+    file.write("In %s %s %s\n\n" %(hours, minutes, seconds))
+    file.write("In %s \n\n" %(time2))
 
     # Output maps
     file.write("Location Map: ")
@@ -210,8 +214,9 @@ def report(stat, emojistat, hasLoc):
     pp.pprint(sorted(emoji_count_map.items(), key=itemgetter(1), reverse=True))
 
     # Command line finish
-    hours, minutes, seconds = timehelper(datetime.now() - startTime)
+    hours, minutes, seconds, time2 = timehelper(datetime.now() - startTime)
     print ("Report published: looked at %s tweets on \"%s\" %s in %s%s%s.\n" %(stat, search_query, locale, hours, minutes, seconds))
+    print ("Report published: looked at %s tweets on \"%s\" %s in %s.\n" %(stat, search_query, locale, time2))
 
 
 # loop through MAX_TWEETS tweets to gather data
@@ -261,6 +266,7 @@ main()
 
 
 # TODO:
+# SEE ABOVE -- test alternate time output
 # clump repeated values into array of arrays
 # 'New YorkNew York' error?
 # add graphs to final report
