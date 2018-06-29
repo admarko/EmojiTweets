@@ -170,6 +170,7 @@ def insert_emoji_map(status, location):
 #####  main script methods #####
 ################################
 
+# Helper for print formatting of timer in final report
 def timehelper(endtime):
     hours, remainder = divmod(endtime.total_seconds(), 3600)
     if hours == 0.0:
@@ -186,8 +187,12 @@ def timehelper(endtime):
 
 # Print final report with statistics to console
 def report(stat, emojistat, hasLoc):
+    # Output set up
     filename = "report_" + str(stat) + "_tweets_on_" + search_query + ".txt"
     file = open(os.path.join('reports',filename), "w")
+    pp = pprint.PrettyPrinter(indent=4, stream=file)
+
+    # Output header
     file.write("Final Report:\n\n")
     locale = 'internationally' if international else 'domestically'
     file.write("%s Total tweets were looked at on search query \"%s\" %s\n" %(stat, search_query, locale))
@@ -195,15 +200,19 @@ def report(stat, emojistat, hasLoc):
     file.write("%s of Emoji Tweets had locations\n" %(hasLoc))
     hours, minutes, seconds = timehelper(datetime.now() - startTime)
     file.write("In %s%s%s\n\n" %(hours, minutes, seconds))
-    pp = pprint.PrettyPrinter(indent=4, stream=file)
+
+    # Output maps
     file.write("Location Map: ")
     pp.pprint(location_map)
     file.write("\n Emoji Map: ")
     pp.pprint(emoji_map)
     file.write("\n Emoji Count Map: ")
     pp.pprint(sorted(emoji_count_map.items(), key=itemgetter(1), reverse=True))
+
+    # Command line finish
     hours, minutes, seconds = timehelper(datetime.now() - startTime)
     print ("Report published: looked at %s tweets on \"%s\" %s in %s%s%s.\n" %(stat, search_query, locale, hours, minutes, seconds))
+
 
 # loop through MAX_TWEETS tweets to gather data
 #if __name__ == "__main__":
