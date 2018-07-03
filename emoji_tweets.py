@@ -61,7 +61,7 @@ states = {'Alabama','Alaska','Arizona','Arkansas','California','Colorado',
 #################
 
 # Google Maps Key: 4 keys to deal with Google's limits
-gmaps = googlemaps.Client(key=config.gmapkey1) 
+gmaps = googlemaps.Client(key=config.gmapkey2) 
 
 # Twitter API keys: using a Tweepy wrapper
 auth = tweepy.AppAuthHandler(config.consumer_key, config.consumer_secret)
@@ -174,19 +174,19 @@ def insert_emoji_map(status, location):
 # Helper for print formatting of timer in final report
 def timehelper(endtime):
     hours, remainder = divmod(endtime.total_seconds(), 3600)
+    minutes, seconds = divmod(remainder, 60)
     if hours == 0.0:
         hours = ""
-    else: 
-        hours = str(int(hours)) + "h"
-    minutes, seconds = divmod(remainder, 60)
-    if minutes == 0.0:
-        minutes = ""
-    else: 
-        minutes = str(int(minutes)) + "m"
-    seconds = str(round(seconds, 2)) + "s"
-    time2 = "temp"
-    return hours, minutes, seconds, time2
-    # TODO: Test alternate time output HH:MM:SS.ms
+    else:
+        hours = str(int(hours)) + ":"
+
+    if minutes == 0.0: 
+       minutes = ""
+    else:
+        minutes = str(int(minutes)) + ":"        
+    seconds = str(round(seconds, 2))
+    time = hours + minutes + seconds
+    return time
 
 # Print final report with statistics to console
 def report(stat, emojistat, hasLoc):
@@ -201,9 +201,8 @@ def report(stat, emojistat, hasLoc):
     file.write("%s Total tweets were looked at on search query \"%s\" %s\n" %(stat, search_query, locale))
     file.write("%s of those tweets contained emojis\n" %(emojistat))
     file.write("%s of Emoji Tweets had locations\n" %(hasLoc))
-    hours, minutes, seconds, time2 = timehelper(datetime.now() - startTime)  # truncate this to one output once decided
-    file.write("In %s %s %s\n\n" %(hours, minutes, seconds))
-    file.write("In %s \n\n" %(time2))
+    time = timehelper(datetime.now() - startTime) 
+    file.write("In %s \n\n" %(time))
 
     # Output maps
     file.write("Location Map: ")
@@ -214,10 +213,8 @@ def report(stat, emojistat, hasLoc):
     pp.pprint(sorted(emoji_count_map.items(), key=itemgetter(1), reverse=True))
 
     # Command line finish
-    hours, minutes, seconds, time2 = timehelper(datetime.now() - startTime)
-    print ("Report published: looked at %s tweets on \"%s\" %s in %s%s%s.\n" %(stat, search_query, locale, hours, minutes, seconds))
-    print ("Report published: looked at %s tweets on \"%s\" %s in %s.\n" %(stat, search_query, locale, time2))
-
+    time = timehelper(datetime.now() - startTime) 
+    print("Report published: looked at %s tweets on \"%s\" %s in %s\n" %(stat, search_query, locale, time))
 
 # loop through MAX_TWEETS tweets to gather data
 #if __name__ == "__main__":
