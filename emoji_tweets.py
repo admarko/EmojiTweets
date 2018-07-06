@@ -177,16 +177,14 @@ def timehelper(endtime):
     minutes, seconds = divmod(remainder, 60)
     if hours == 0.0:
         hours = ""
-    else:
-        hours = str(int(hours)) + ":"
-
-    if minutes == 0.0: 
-       minutes = ""
-    else:
-        minutes = str(int(minutes)) + ":"        
-    seconds = str(round(seconds, 2))
-    time = hours + minutes + seconds
-    return time
+    else: 
+        hours = str(int(hours)) + "h "
+    if minutes == 0.0:
+        minutes = ""
+    else: 
+        minutes = str(int(minutes)) + "m "
+    seconds = str(round(seconds, 2)) + "s"
+    return hours + minutes + seconds
 
 # Print final report with statistics to console
 def report(stat, emojistat, hasLoc):
@@ -263,7 +261,6 @@ main()
 
 
 # TODO:
-# SEE ABOVE -- test alternate time output
 # clump repeated values into array of arrays
 # 'New YorkNew York' error?
 # add graphs to final report
