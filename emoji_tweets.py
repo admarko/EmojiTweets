@@ -137,7 +137,7 @@ def status_has_location(status):
 #####  Dictionary Methods #####
 ###############################
 
-# insert country-emoji pair into map
+#insert country-emoji pair into map
 def insert_location_map(location, status):
     for char in status:
         if(char_is_emoji(char)):
@@ -166,6 +166,24 @@ def insert_emoji_map(status, location):
                 else:
                     emoji_map[char] = [location]
                     #emoji_map[char] = {location, 1};
+
+
+
+# Buils the forward trie out of all words from the corpus
+# help from: https://www.programiz.com/python-programming/methods/dictionary/setdefault
+def build_trie(words, trie):
+    for word in words:
+        temp = trie
+        wordtemp = temp
+        temp = temp.setdefault(word[:k], {"count": 0})
+        for char in word[k:]:
+            wordtemp = temp
+            temp = temp.setdefault(char, {"count": 0})
+            wordtemp["count"] = len(wordtemp) - 1
+        temp = temp.setdefault('#','#')                  #end of word signal
+
+
+
 
 ################################
 #####  main script methods #####
@@ -261,11 +279,9 @@ main()
 
 
 # TODO:
-# clump repeated values into array of arrays
+# clump repeated values into array of arrays -- Look into set default
 # 'New YorkNew York' error?
 # add graphs to final report
-# make web interface
-
 
 
 #############################
