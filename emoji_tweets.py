@@ -233,7 +233,6 @@ def report(stat, emojistat, hasLoc):
     print("Report published: looked at %s tweets on \"%s\" %s in %s\n" %(stat, search_query, locale, time))
 
 # loop through MAX_TWEETS tweets to gather data
-#if __name__ == "__main__":
 def main():
     # global counts
     emojistat = 0
@@ -267,12 +266,8 @@ def main():
     report(stat, emojistat, hasLoc)
 
 # Run main program
-main()
-
-
-
-
-
+if __name__ == "__main__":
+    main()
 
 
 
